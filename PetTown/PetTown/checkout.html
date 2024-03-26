@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/PetTown.png" rel="shortcut icon">
+    <title>Pet Town</title>
+
+
+    <!--====== Phông chữ Google ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+
+    <!--====== Bộ CSS của các thư viện bên ngoài ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+
+    <!--====== Utility-Spacing (CSS Utility) ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+
+    <!--====== Ứng dụng (CSS chính của ứng dụng) ======-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+
+    <!--====== Phần Chính của Ứng Dụng ======-->
+    <div id="app">
+
+
+        <!--====== Tiêu Đề Chính của Ứng Dụng ======-->
+        <header class="header--style-1 header--box-shadow">
+
+
+            <!--====== Thanh Điều Hướng 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+
+
+                    <!--====== Thanh Điều Hướng Chính ======-->
+                    <div class="primary-nav">
+
+
+                        <!--====== Logo Chính ======-->
+
+
+                        <a class="main-logo" href="index.html">
+
+
+                            <img src="images/PetTown.png" alt=""></a>
+                        <!--====== Kết Thúc - Logo Chính ======-->
+
+
+
+
+                       <!--====== Biểu mẫu Tìm Kiếm ======-->
+<form class="main-form">
+
+
+    <label for="main-search"></label>
+
+
+    <!-- Input Tìm Kiếm -->
+    <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+
+
+    <!-- Nút Tìm Kiếm -->
+    <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+</form>
+<!--====== Kết Thúc - Biểu mẫu Tìm Kiếm ======-->
+
+
+
+
+<!--====== Tiện Ích Dropdown Chính ======-->
+<div class="menu-init" id="navigation">
+
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+
+
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+
+
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+
+
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài Khoản">
+
+
+                <!-- Icon Tài Khoản -->
+                <a><i class="far fa-user-circle"></i></a>
+
+
+                <!--====== Dropdown ======-->
+
+
+                <span class="js-menu-toggle"></span>
+                <ul style="width:120px">
+
+
+                    <!-- Mục Đăng Nhập -->
+                    <li>
+                        <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+
+
+                    <!-- Mục Đăng Xuất -->
+                    <li>
+                        <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+</div>
+<!--====== Kết Thúc - Tiện Ích Dropdown Chính ======-->
+</div>
+<!--====== Kết Thúc - Thanh Điều Hướng Chính ======-->
+</div>
+</nav>
+<!--====== Kết Thúc - Nav 1 ======-->
+
+
+<!--====== Thanh Điều Hướng 2 ======-->
+<nav class="secondary-nav-wrapper">
+    <div class="container">
+
+
+        <!--====== Thanh Điều Hướng Phụ ======-->
+        <div class="secondary-nav">
+
+
+            <!--====== Kích Hoạt Plugin Thả Xuống ======-->
+            <div class="menu-init" id="navigation2">
+
+
+                <!-- Nút Kích Hoạt Toggle -->
+                <button class="btn btn--icon toggle-button fas fa-cog" type="button"></button>
+
+
+                <!--====== Menu ======-->
+                <div class="ah-lg-mode">
+
+
+                    <!-- Nút Đóng Menu -->
+                    <span class="ah-close">✕ Đóng</span>
+
+
+                    <!--====== Danh Sách ======-->
+                    <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+                        <li>
+
+
+                            <!-- Danh Mục cửa hàng -->
+                            <li class="has-dropdown">
+                                <a href="shop-side-version-2.html">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-side-version-2.html">Shop cho chó</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Vật Nuôi Khác -->
+                            <li class="has-dropdown">
+                                <a>VẬT NUÔI KHÁC<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống ======-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Sóc bay Úc baby <div style="display:inline-block;background-color:red;padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">HOT</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Sóc bay Úc mặt trắng</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Sóc bay Úc Mosaic</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+
+                            <!-- Danh Mục Dịch Vụ -->
+                            <li class="has-dropdown">
+                                <a>DỊCH VỤ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho thuê lồng vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Trông giữ chó, mèo, thú cưng</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+
+                            <!-- Danh Mục Blog -->
+                            <li class="has-dropdown">
+                                <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:300px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho mèo mẹ ăn gì để nhiều sữa? <div style="display:inline-block;background-color:rgb(0, 132, 255);padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">NEW</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Phân biệt 7 nhóm chó</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Giống chó không rụng lông</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-masonry.html">Tên chó bằng tiếng Trung</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Lịch tẩy giun định kì cho mèo</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+                        </ul>
+                        <!--====== Kết thúc - Danh Sách ======-->
+                    </div>
+                    <!--====== Kết thúc - Menu ======-->
+                </div>
+                <!--====== Kết thúc - Plugin chính thả xuống ======-->
+    
+    
+                        <!--====== Tiện Ích Thả Xuống Chính ======-->
+<div class="menu-init" id="navigation3">
+
+
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
+
+
+    <!-- Số Lượng Sản Phẩm Tổng Cộng -->
+    <span class="total-item-round">2</span>
+
+
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+
+
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+
+
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li>
+
+
+                <!-- Trang Chủ -->
+                <a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li>
+
+
+                <!-- Danh Sách Yêu Thích -->
+                <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+            <li class="has-dropdown">
+
+
+                <!-- Giỏ Hàng Mini -->
+                <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
+
+
+                    <!-- Số Lượng Sản Phẩm Trong Giỏ -->
+                    <span class="total-item-round">2</span></a>
+
+
+                <!--====== Dropdown ======-->
+                <span class="js-menu-toggle"></span>
+                <div class="mini-cart">
+
+
+                    <!--====== Container Sản Phẩm Mini ======-->
+                    <div class="mini-product-container gl-scroll u-s-m-b-15">
+
+
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+
+
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+
+
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://bizweb.dktcdn.net/100/240/380/products/hinh-sp-08-b59ecad5-96dd-4b30-b559-dab96e400aad.jpg?v=1610966126447" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+
+
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+
+
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+
+
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+
+
+                                        <a href="product-detail.html">Royal Canin Urinary S/O – Thức Ăn Hạt Cho Mèo Bị Sỏi Thận</a>
+                                    </span>
+
+
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">1 x</span>
+
+
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">131000đ</span>
+                                </div>
+                            </div>
+
+
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+
+
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+
+
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+
+
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://www.maplepets.in/wp-content/uploads/2023/08/web3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+
+
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+
+
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+
+
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+
+
+                                        <a href="product-detail.html">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</a>
+                                    </span>
+
+
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">2 x</span>
+
+
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">180000đ</span>
+                                </div>
+                            </div>
+
+
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+
+
+                    </div>
+                    <!--====== Kết Thúc - Container Sản Phẩm Mini ======-->
+
+
+                    <!--====== Thống Kê Sản Phẩm Mini ======-->
+                    <div class="mini-product-stat">
+                        <div class="mini-total">
+
+
+                            <!-- Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-text">TẠM TÍNH</span>
+
+
+                            <!-- Giá trị Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-value">442000đ</span>
+                        </div>
+
+
+                        <!-- Hành Động Mini -->
+                        <div class="mini-action">
+
+
+                            <!-- Liên kết Thanh Toán -->
+                            <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
+
+
+                            <!-- Liên kết Thông Tin Giỏ Hàng -->
+                            <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">THÔNG TIN GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                    <!--====== Kết Thúc - Thống Kê Sản Phẩm Mini ======-->
+                </div>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+</div>
+<!--====== Kết Thúc - Tiện Ích Thả Xuống Chính ======-->
+</div>
+
+
+        <!--====== Nội dung App ======-->
+
+        <div class="app-content">
+
+            <!--====== Khối 1 ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== Nội dung của khối ======-->
+                <!--======Mở một khối mới với class "section__content" ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+                                <!-- Danh sách các phần dẫn hướng breadcrumb trong unordered list (ul)-->
+                                <ul class="breadcrumb__list">
+                                    <!-- Mỗi phần breadcrumb là một list item (li) với class "has-separator". Class này có thể tạo đường phân cách (separator) giữa các phần breadcrumb -->
+                                    <li class="has-separator">
+                                      <!-- Đường dẫn đến trang thanh toán (checkout.html) hiển thị text "Thanh toán" trong breadcrumb.-->  
+                                        <a href="index.html">Trang chủ</a></li>
+                                    <li class="is-marked">
+
+                                        <a href="checkout.html">Thanh toán</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== Kết thúc ======-->
+
+
+            <!--====== Khối 2 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Nội dung khối ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Mở một khối mới với id duy nhất-->
+                                <div id="checkout-msg-group">
+                                    <div class="msg u-s-m-b-30">
+                                        <!-- Sử dụng thẻ span để chứa test và định dạng test -->
+                                        <span class="msg__text">Bạn mới quay lại?
+                                            <!--  tạo một link với class "gl-link" dẫn đến section "#return-customer" bên dưới (sử dụng data-toggle="collapse" để kích hoạt mở section)-->
+                                            <a class="gl-link" href="#return-customer" data-toggle="collapse">Bấm vào đây để đăng nhập</a></span>
+                                            <!-- section mở rộng/thu gọn (collapse) với ID "return-customer" và được điều khiển bởi element "#checkout-msg-group" ở trên.-->
+                                        <div class="collapse" id="return-customer" data-parent="#checkout-msg-group">
+                                            <div class="l-f u-s-m-b-16">
+
+                                                <span class="gl-text u-s-m-b-16">Nếu bạn có tài khoản, xin hãy đăng nhập</span>
+                                                <!-- Khởi tạo một form đăng nhập với class "l-f__form" thuộc layout dọc.-->
+                                                <form class="l-f__form">
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+                                                            <!-- Tạo label cho input email với class "gl-label" và liên kết với ID "login-email -->
+                                                            <label class="gl-label" for="login-email">E-MAIL *</label>
+                                                            <!--Tạo input nhập email với class "input-text", "input-text--primary-style" (định dạng theo style chính) -->
+                                                            <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Nhập E-mail"></div>
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label class="gl-label" for="login-password">Mật khẩu *</label>
+
+                                                            <input class="input-text input-text--primary-style" type="text" id="login-password" placeholder="Nhập mật khẩu"></div>
+                                                    </div>
+                                                    <div class="gl-inline">
+                                                        <div class="u-s-m-b-15">
+                                                            <!--  Tạo button đăng nhập với class "btn", "btn--e-transparent-brand-b-2" và type="submit"-->
+                                                            <button class="btn btn--e-transparent-brand-b-2" type="submit">Đăng nhập</button></div>
+                                                        <div class="u-s-m-b-15">
+
+                                                            <a class="gl-link" href="lost-password.html">Bạn quên mật khẩu?</a></div>
+                                                    </div>
+
+                                                    <!--====== Hộp thoại ======-->
+                                                    <div class="check-box">
+                                                        <!-- Đây là một checkbox với ID "remember-me" dùng để người dùng chọn nếu muốn lưu thông tin đăng nhập.-->
+                                                        <input type="checkbox" id="Ghi nhớ tôi">
+                                                        <div class="check-box__state check-box__state--primary">
+                                                            <!--Tạo label cho checkbox với class "check-box__label", liên kết với ID "remember-me" -->
+                                                            <label class="check-box__label" for="ghi nhớ tôi">Ghi nhớ tôi</label></div>
+                                                    </div>
+                                                    <!--====== Kết thúc hộp thoại ======-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="msg">
+                                        <span class="msg__text">Bạn có mã ưu đãi?
+                                            <a class="gl-link" href="#have-coupon" data-toggle="collapse">Hãy bấm vào đây để nhập mã giảm giá</a>
+                                        </span>
+                                        <div class="collapse" id="have-coupon" data-parent="#checkout-msg-group">
+                                            <div class="c-f u-s-m-b-16">
+                                                <span class="gl-text u-s-m-b-16">Nếu bạn có mã giảm giá, vui lòng điền vào bên dưới</span>
+                                                <form class="c-f__form" id="coupon-form">
+                                                    <div class="u-s-m-b-16">
+                                                        <div class="u-s-m-b-15">
+                                                            <label for="coupon"></label>
+                                                            <input class="input-text input-text--primary-style" type="text" id="coupon" placeholder="Mã giảm giá">
+                                                            <span id="coupon-msg"></span>
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+                                                            <button class="btn btn--e-transparent-brand-b-2" type="button" id="apply-coupon">Áp dụng</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc nội dung khối ======-->
+            </div>
+            <!--====== Kết thúc khối 2 ======-->
+
+
+            <!--====== Khối 3 ======-->
+            <div class="u-s-p-b-60">
+
+                <!--====== Nội dung khối ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="checkout-f">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- Tiêu đề cho khung -->
+                                    <h1 class="checkout-f__h1">THÔNG TIN GIAO HÀNG</h1>
+                                    <!-- Khởi tạo một form cho thông tin giao hàng với class "checkout-f__delivery" để định dạng.-->
+                                    <form class="checkout-f__delivery">
+                                        <div class="u-s-m-b-30">
+                                            <div class="u-s-m-b-15">
+
+                                            </div>
+
+                                            <!--====== Thiết kế Họ và Tên ======-->
+                                            <div class="gl-inline">
+                                                <div class="u-s-m-b-15">
+                                                    <!--  Tạo label cho trường nhập họ với class "gl-label" và liên kết với ID của input "billing-fname".-->
+                                                    <label class="gl-label" for="billing-fname">HỌ *</label>
+                                                    <!--Tạo input nhập họ với các class:
+                                                    * input-text: Kiểu input là nhập text.
+                                                    * input-text--primary-style: Định dạng theo style chính.
+                                                    * id="billing-fname": Liên kết với label phía trên.
+                                                    * data-bill (tùy chọn): Có thể liên quan đến việc lưu trữ hoặc xử lý dữ liệu họ.-->
+                                                    <input class="input-text input-text--primary-style" type="text" id="billing-fname" data-bill=""></div>
+                                                <div class="u-s-m-b-15">
+
+                                                    <label class="gl-label" for="billing-lname">TÊN *</label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="billing-lname" data-bill=""></div>
+                                            </div>
+                                                    
+                                            <!--====== Kết thúc ======-->
+
+
+                                            <!--====== E-MAIL ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-email">E-MAIL *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-email" data-bill=""></div>
+                                            <!--====== Kết thúc ======-->
+
+
+                                            <!--====== Thiết kế SDT ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-phone">SỐ ĐIỆN THOẠI *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-phone" data-bill=""></div>
+                                            <!--====== Kết thúc ======-->
+
+
+                                            <!--====== Tên đường ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-street">ĐỊA CHỈ CỤ THỂ *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-street" placeholder="Số nhà và tên đường" data-bill=""></div>
+                                            <div class="u-s-m-b-15">
+
+                                                <label for="billing-street-optional"></label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-street-optional" placeholder="Tên căn hộ, số căn hộ" data-bill=""></div>
+                                            <!--====== Kết thúc ======-->
+
+                                            <!--====== Phần thị trấn, thành phố ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-town-city">QUẬN, HUYỆN *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-town-city" data-bill=""></div>
+                                            <!--====== End - Town / City ======-->
+
+
+                                            <!--====== TỈNH, THÀNH PHỐ ======-->
+                                            <div class="u-s-m-b-15">
+
+                                                <label class="gl-label" for="billing-state">TỈNH, THÀNH PHỐ *</label>
+                                                <input class="input-text input-text--primary-style" type="text" id="billing-state" data-bill="">
+                                            </div>
+                                            <!--====== Kết thúc ======-->
+
+                                            <div class="u-s-m-b-10">
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="make-default-address" data-bill="">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="make-default-address">Sử dụng địa chỉ mặc định</label></div>
+                                                </div>
+                                                <!--====== Kết thúc ======-->
+                                            </div>
+                                            
+                                            <div class="u-s-m-b-10">
+
+                                                <label class="gl-label" for="order-note">Ghi chú thêm thông tin order</label><textarea class="text-area text-area--primary-style" id="order-note"></textarea></div>
+                                            <div>
+
+                                                <button class="btn btn--e-transparent-brand-b-2" type="submit">LƯU</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h1 class="checkout-f__h1">ĐƠN HÀNG CỦA BẠN</h1>
+
+                                    <!--====== Đơn hàng  ======-->
+                                    <div class="o-summary">
+                                        <div class="o-summary__section u-s-m-b-30">
+                                    <div class="cart-row">
+                                        <!--Tạo một cột trong hàng, chứa tiêu đề "Sản Phẩm" với class "cart-item", "cart-header", và "cart-column" để định dạng. -->
+                                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                        <span class="cart-price cart-header cart-column">Giá</span>
+                                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                    </div>
+                                    <div class="cart-items">
+                                        <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <!-- Hiển thị hình ảnh sản phẩm với class "cart-item-image", nguồn ảnh, chiều rộng 100px và chiều cao 100px.-->
+                                            <img class="cart-item-image" src="https://www.maplepets.in/wp-content/uploads/2023/08/web3.png" width="100" height="100">
+                                            <!-- Hiển thị tên sản phẩm trong span với class "cart-item-title".-->
+                                            <span class="cart-item-title">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</span>
+                                        </div>
+                                        <span class="cart-price cart-column">180000đ</span>
+                                        <div class="cart-quantity cart-column">
+                                            <!--Tạo input cho người dùng nhập số lượng sản phẩm, với class "cart-quantity-input", type="number" (chỉ cho nhập số) và giá trị mặc định là 1. -->
+                                            <input class="cart-quantity-input" type="number" value="1">
+                                            <!-- Tạo button để xóa sản phẩm khỏi giỏ hàng, với class "btn btn-danger" (màu đỏ) và type="button" (không submit form).-->
+                                            <button class="btn btn-danger" type="button">Xóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://bizweb.dktcdn.net/100/240/380/products/hinh-sp-08-b59ecad5-96dd-4b30-b559-dab96e400aad.jpg?v=1610966126447" width="100" height="100">
+                                            <span class="cart-item-title">Royal Canin Urinary S/O – Thức Ăn Hạt Cho Mèo Bị Sỏi Thận</span>
+                                        </div>
+                                        <span class="cart-price cart-column">131000đ</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">Xóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                                        <span class="cart-total-price">442000đ</span>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>                         
+                                <script>
+                                    // update cart 
+function updatecart() {
+  var cart_item = document.getElementsByClassName("cart-items")[0];
+  var cart_rows = cart_item.getElementsByClassName("cart-row");
+  var total = 0;
+  for (var i = 0; i < cart_rows.length; i++) {
+    var cart_row = cart_rows[i]
+    var price_item = cart_row.getElementsByClassName("cart-price ")[0]
+    var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
+    var price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
+    var quantity = quantity_item.value // lấy giá trị trong thẻ input
+    total = total + (price * quantity)
+  }
+  document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+  // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+}
+// xóa cart
+var remove_cart = document.getElementsByClassName("btn-danger");
+                                 for (var i = 0; i < remove_cart.length; i++) {
+                                 var button = remove_cart[i]
+                                 button.addEventListener("click", function () {
+                                 var button_remove = event.target
+                                 button_remove.parentElement.parentElement.remove()
+                                 updatecart()
+                                  })
+                                 }
+// thay đổi số lượng sản phẩm
+var quantity_input = document.getElementsByClassName("cart-quantity-input");
+for (var i = 0; i < quantity_input.length; i++) {
+  var input = quantity_input[i];
+  input.addEventListener("change", function (event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+    }
+    updatecart()
+  })
+}
+                                </script>
+                                 <!--====== Các sản phẩm upsell  ======-->
+                                <h2 class="checkout-f__h1">Các sản phẩm nên mua kèm theo</h2>
+                                <div class="o-summary">
+                                    <div class="o-summary__section u-s-m-b-30">
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                    <span class="cart-price cart-header cart-column">Giá</span>
+                                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                </div>
+                                <div class="cart-items">
+                                    <div class="cart-row">
+                                    <div class="cart-item cart-column">
+                                        <img class="cart-item-image" src="https://go.yolo.vn/wp-content/uploads/2021/10/pate-whiska-cho-meo-yolo-pet-shop-2-625x612.jpg" width="100" height="100">
+                                        <span class="cart-item-title">Pate Whiskas cho mèo – Thơm ngon, kích thích ăn uống</span>
+                                    </div>
+                                    <span class="cart-price cart-column">85000đ</span>
+                                    <div class="cart-quantity cart-column">
+                                        <input class="cart-quantity-input" type="number" value="1">
+                                        <button class="btn btn-buy" type="button">Mua</button>
+                                    </div>
+                                </div>
+                                <div class="cart-row">
+                                    <div class="cart-item cart-column">
+                                        <img class="cart-item-image" src="https://letrungpet.com/upload/product/drontal-cho-meo-2-8940.png" width="100" height="100">
+                                        <span class="cart-item-title">Tẩy giun Drontal plus dạng viên cho chó mèo</span>
+                                    </div>
+                                    <span class="cart-price cart-column">45000đ</span>
+                                    <div class="cart-quantity cart-column">
+                                        <input class="cart-quantity-input" type="number" value="1">
+                                        <button class="btn btn-buy" type="button">Mua</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>      
+                               <!--====== Áp dụng mã giảm giá  ======-->
+                                <h3 class="checkout-f__h1">Các mã giảm giá từ shop</h3>
+                                <div class="o-summary__section u-s-m-b-30">
+                                        <!-- Khởi tạo khối chứa mã giảm giá cụ thể -->
+                                        <div class="coupon-container">
+                                            <div class="coupon">
+                                              <div class="coupon-header">
+                                                <img class="cart-item-image" src="images/PetTown.png" width="200" height="200">
+                                                <h3 class="coupon-title">Giảm 10% đơn hàng</h3>
+                                                <!-- Hiển thị tiêu đề mã giảm giá trong tag h3, với class coupon-title.-->
+                                                <p class="coupon-condition">Tối đa 100k</p>
+                                              </div>
+                                              <div class="coupon-body">
+                                                <button class="coupon-status" type="button">Áp dụng</button>
+                                              </div>
+                                            </div>
+                                        
+                                            <div class="coupon">
+                                              <div class="coupon-header">
+                                                <img class="cart-item-image" src="images/PetTown.png" width="200" height="200">
+                                                <h3 class="coupon-title">Giảm 15% đơn hàng</h3>
+                                                <p class="coupon-condition">Tối đa 120k</p>
+                                              </div>
+                                              <div class="coupon-body">
+                                                <button class="coupon-status" type="button">Áp dụng</button>
+                                              </div>
+                                            </div>
+                                    </div>
+                                        </div>
+                                         <!--====== Kết thúc  ======-->
+                                        <script>
+                                           // Áp mã khuyến mãi//
+ // Hàm này sẽ được gọi khi người dùng nhấn nút "Áp dụng"
+ function applyCoupon() {
+    var couponCode = document.getElementById('coupon').value; // Lấy giá trị nhập vào từ input có id 'coupon'
+    var messageElement = document.getElementById('coupon-msg'); // Lấy phần tử để hiển thị thông báo
+
+    // Kiểm tra giá trị nhập vào và cập nhật thông báo phù hợp
+    if (couponCode === 'NOEL2023GR9') {
+      messageElement.textContent = "Chúc mừng, mã giảm giá có thể được áp dụng";
+    } else {
+      messageElement.textContent = "Mã giảm giá đã hết hạn hoặc không có";
+    }
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    // Gắn hàm applyCoupon vào sự kiện click của nút "Áp dụng"
+    document.getElementById('apply-coupon').addEventListener('click', applyCoupon);
+  });
+// Hàm này sẽ được gọi khi người dùng nhấn nút "Áp dụng"
+function applyCoupon() {
+    var couponCode = document.getElementById('coupon').value; // Lấy giá trị nhập vào từ input có id 'coupon'
+    var messageElement = document.getElementById('coupon-msg'); // Lấy phần tử để hiển thị thông báo
+    var discountRate = 20; // Giảm giá 20%
+  
+    // Kiểm tra giá trị nhập vào và áp dụng mã giảm giá nếu đúng
+    if (couponCode === 'NOEL2023GR9') {
+      applyDiscount(discountRate);
+      messageElement.textContent = "Chúc mừng, mã giảm giá đã được áp dụng";
+    } else {
+      messageElement.textContent = "Mã giảm giá đã hết hạn hoặc không hợp lệ";
+    }
+  }
+  
+  // Hàm để áp dụng giảm giá và cập nhật giỏ hàng
+  function applyDiscount(discountRate) {
+    var cartTotalElement = document.getElementsByClassName("cart-total-price")[0];
+    var cartTotal = parseFloat(cartTotalElement.innerText.replace('đ', '').replace(/,/g, ''));
+  
+    // Tính toán số tiền giảm giá
+    var discount = (cartTotal * discountRate) / 100;
+  
+    // Áp dụng giảm giá vào tổng số tiền
+    var discountedTotal = cartTotal - discount;
+  
+    // Cập nhật tổng số tiền trong giỏ hàng
+    cartTotalElement.innerText = discountedTotal.toLocaleString('vi-VN') + 'đ';
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Gắn hàm applyCoupon vào sự kiện click của nút "Áp dụng"
+    document.getElementById('apply-coupon').addEventListener('click', applyCoupon);
+  });
+  
+
+
+// Khai báo biến để lưu tỷ lệ giảm giá và số tiền giảm giá tối đa
+var discountPercentage = 10; // Giảm giá 10%
+var maxDiscountAmount = 100000; // Tối đa 100k
+
+// Hàm để áp dụng giảm giá và cập nhật giỏ hàng
+function applyDiscount() {
+  var cartTotalElement = document.getElementsByClassName("cart-total-price")[0];
+  var cartTotal = parseFloat(cartTotalElement.innerText.replace('đ', '').replace(/,/g, ''));
+
+  // Tính toán số tiền giảm giá
+  var discount = (cartTotal * discountPercentage) / 100;
+
+  // Nếu số tiền giảm giá lớn hơn số tiền cho phép, sử dụng số tiền giảm giá tối đa
+  discount = discount > maxDiscountAmount ? maxDiscountAmount : discount;
+
+  // Áp dụng giảm giá vào tổng số tiền
+  var discountedTotal = cartTotal - discount;
+
+  // Cập nhật tổng số tiền trong giỏ hàng
+  cartTotalElement.innerText = discountedTotal + 'VNĐ';
+
+  alert('Giảm giá 10% đơn hàng, tối đa 100k. Lấy mã thành công!');
+}
+
+// Thêm bộ lắng nghe sự kiện cho nút "Áp dụng"
+var applyButtons = document.getElementsByClassName("coupon-status");
+for (var i = 0; i < applyButtons.length; i++) {
+  applyButtons[i].addEventListener("click", function() {
+    applyDiscount();
+  });
+}
+
+// Mã hiện có để cập nhật giỏ hàng, xóa mặt hàng, và thay đổi số lượng
+// ...
+
+// Gọi hàm updatecart để cập nhật giỏ hàng lần đầu
+updatecart();
+                                        </script>
+                                        <div class="o-summary__section u-s-m-b-30">
+                                            <div class="o-summary__box">
+                                                <h1 class="checkout-f__h1">THÔNG TIN THANH TOÁN</h1>
+                                                <form class="checkout-f__payment">
+                                                    <div class="u-s-m-b-10">
+
+                                                        <!--====== COD ======-->
+                                                        <div class="radio-box">
+
+                                                            <input type="radio" id="cash-on-delivery" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                                <label class="radio-box__label" for="cash-on-delivery">Thanh toán khi Nhận hàng</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc ======-->
+
+                                                        <span class="gl-text u-s-m-t-6">Trả tiền mặt khi thanh toán</span>
+                                                    </div>
+                                                    <div class="u-s-m-b-10">
+
+                                                        <!--====== Chuyển khoản ngân hàng ======-->
+                                                        <div class="radio-box">
+
+                                                            <input type="radio" id="direct-bank-transfer" name="payment">
+                                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                                <label class="radio-box__label" for="direct-bank-transfer">Chuyển khoản Ngân hàng</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc ======-->
+
+                                                        <span class="gl-text u-s-m-t-6">Thực hiện thanh toán vào ngay tài khoản ngân hàng của chúng tôi. Vui lòng ghi Mã đơn hàng của bạn trong phần Nội dung thanh toán. Đơn hàng sẽ đươc giao sau khi tiền đã chuyển.
+                                                            Hãy gửi ảnh chụp màn hình thanh toán vào số Zalo của chúng tôi: 0785452432. SỐ TÀI KHOẢN: 0785452432. CHỦ TÀI KHOẢN: NGUYỄN MINH PHƯƠNG Ngân hàng MB Bank </span>
+                                                    </div>
+                                                  
+                                                  
+                                                    <div class="u-s-m-b-15">
+
+                                                        <!--====== Hộp thoại ======-->
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="term-and-condition">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="term-and-condition">Tôi đồng ý với</label></div>
+                                                        </div>
+                                                        <!--====== Kết thúc ======-->
+
+                                                        <a class="gl-link">TẤT CẢ THỎA THUẬN.</a>
+                                                    </div>
+                                                    <div>
+
+                                                        <button class="btn btn--e-brand-b-2" type="submit">TIẾN HÀNH ĐẶT HÀNG</button></div>
+                                                        <script>
+                                                            // gọi hàm để hiển thị thông báo thành công sau khi click nút đặt hàng 
+                                                        document.querySelectorAll('.btn--e-brand-b-2').forEach(button => {
+                                                        button.addEventListener('click', function() {
+                                                        alert('Đặt hàng thành công');
+                                                        });
+                                                        });
+                                                        </script>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====== Kết thúc phần tóm tắt thanh toán ======-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc nội dung khối  ======-->
+            </div>
+            <!--====== Kết thúc nội dung khối 3 ======-->
+        </div>
+        <!--====== Kết thúc phần nội dung App  ======-->
+
+<!--====== Phần Footer ======-->
+<footer>
+    <div class="outer-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="outer-footer__content u-s-m-b-40">
+
+                        <span class="outer-footer__content-title">Liên hệ</span>
+                        <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                         <!--Địa chỉ-->
+                            <span>555 Đ. 3 tháng 2, P8, Quận 10, Thành phố Hồ Chí Minh</span></div>
+                        <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                         <!--Hotline-->
+                            <span> 1900 3979</span></div>
+                        <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                         <!--Mail liên lạc-->
+                            <span>pettown@gmail.com</span></div>
+                            <!--Các icon mạng xã hội-->
+                        <div class="outer-footer__social">
+                            <ul>
+                                <li>
+                         <!--Logo facebook kèm hiệu ứng hover-->
+                                    <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li>
+                         <!--Logo twitter kèm hiệu ứng hover-->
+                                    <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li>
+                         <!--Logo youtube kèm hiệu ứng hover-->
+                                    <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li>
+                          <!--Logo instagram kèm hiệu ứng hover-->
+                                    <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li>
+                         <!--Logo google kèm hiệu ứng hover-->
+                                    <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <!-- Phần outer footer-->
+                            <div class="outer-footer__content u-s-m-b-40">
+                                <span class="outer-footer__content-title">Thông tin</span>
+                                <div class="outer-footer__list-wrap">
+                                    <!-- Các thông tin-->
+                                    <ul>
+                                        <li>
+
+                                            <a href="cart.html">Đơn hàng</a></li>
+                                        <li>
+
+                                            <a href="dashboard.html">Tài khoản</a></li>
+                                        <li>
+
+                               
+
+                                            <a href="dash-payment-option.html">Thông tin thanh toán</a></li>
+                                        <li>
+
+                                            <a href="shop-side-version-2.html">Phụ kiện thú cưng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="outer-footer__content u-s-m-b-40">
+                                <div class="outer-footer__list-wrap">
+
+                                    <span class="outer-footer__content-title">Pet Town</span>
+                                    <ul>
+                                        <li>
+
+                                            <a href="about.html">Giới thiệu</a></li>
+                                        <li>
+
+                                            <a href="contact.html">Liên hệ</a></li>
+                                        <li>
+
+                                            <a href="index.html"></a></li>
+                                        <li>
+
+                                            <a href="dash-my-order.html">Giao hàng</a></li>
+                               
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="outer-footer__content">
+                         <!--Phần kêu gọi khách hàng đăng ký mail nhận ưu đãi-->
+                        <span class="outer-footer__content-title">Đăng ký để nhận ưu đãi 20% khi spa thú cưng </span>
+                        <form class="newsletter">
+                            <div class="u-s-m-b-15">
+                                <div class="radio-box newsletter__radio">
+                         <!-- Phần chọn loại thú cưng-->
+                                    <input type="radio" id="male" name="gender">
+                                    <div class="radio-box__state radio-box__state--primary">
+
+                                        <label class="radio-box__label" for="male">Chó</label></div>
+                                </div>
+                                <div class="radio-box newsletter__radio">
+
+                                    <input type="radio" id="female" name="gender">
+                                    <div class="radio-box__state radio-box__state--primary">
+
+                                        <label class="radio-box__label" for="female">Mèo</label></div>
+                                </div>
+                            </div>
+                            <div class="newsletter__group">
+
+                                <label for="newsletter"></label>
+
+                                <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập email của bạn">
+
+                                <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button></div>
+
+                            <span class="newsletter__text"> Ngoài ra, bạn cũng sẽ nhận được các tin tức về những sản phẩm, dịch vụ mới.</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logos-container" style="display: flex; justify-content: space-between; align-items: center;"><a href="index.html">
+                <!-- Logo PetTown -->
+                <img src="images/PetTown.png" alt="Pet Town Logo" style="max-width: 150px; height: auto; border-radius: 20%;"></a>
+                <!-- Chứng nhận bộ công thương -->
+                <img src="images/BoCongThuong.png" alt="Logo BCT" style="max-width: 350px; height: auto;">
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--PHần lower footer-->
+                    <div class="lower-footer__content">
+                        <!--Phần bản quyền-->
+                        <div class="lower-footer__copyright">
+                   
+                            <span>Copyright © 2023</span>
+
+                            <a href="index.html">Pet Town</a>
+
+                            <span>All Right Reserved</span></div>
+                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Kết thúc footer-->
+
+        <!--====== Khối Modal ======-->
+
+
+       
+
+    
+
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="js/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>

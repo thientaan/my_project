@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Pet Town</title>
+
+    <!--====== Phông chữ Google ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Bộ CSS của các thư viện bên ngoài ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--====== Utility-Spacing (CSS Utility) ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!--====== Ứng dụng (CSS chính của ứng dụng) ======-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== Phần Chính của Ứng Dụng ======-->
+    <div id="app">
+
+        <!--====== Tiêu Đề Chính của Ứng Dụng ======-->
+        <header class="header--style-1 header--box-shadow">
+
+            <!--====== Thanh Điều Hướng 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+
+                    <!--====== Thanh Điều Hướng Chính ======-->
+                    <div class="primary-nav">
+
+                        <!--====== Logo Chính ======-->
+
+                        <a class="main-logo" href="index.html">
+
+                            <img src="images/logo/logo-1.png" alt=""></a>
+                        <!--====== Kết Thúc - Logo Chính ======-->
+
+
+                       <!--====== Biểu mẫu Tìm Kiếm ======-->
+<form class="main-form">
+
+    <label for="main-search"></label>
+
+    <!-- Input Tìm Kiếm -->
+    <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+
+    <!-- Nút Tìm Kiếm -->
+    <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+</form>
+<!--====== Kết Thúc - Biểu mẫu Tìm Kiếm ======-->
+
+
+<!--====== Tiện Ích Dropdown Chính ======-->
+<div class="menu-init" id="navigation">
+
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài Khoản">
+
+                <!-- Icon Tài Khoản -->
+                <a><i class="far fa-user-circle"></i></a>
+
+                <!--====== Dropdown ======-->
+
+                <span class="js-menu-toggle"></span>
+                <ul style="width:120px">
+
+                    <!-- Mục Đăng Nhập -->
+                    <li>
+                        <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+
+                    <!-- Mục Đăng Xuất -->
+                    <li>
+                        <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+</div>
+<!--====== Kết Thúc - Tiện Ích Dropdown Chính ======-->
+</div>
+<!--====== Kết Thúc - Thanh Điều Hướng Chính ======-->
+</div>
+</nav>
+<!--====== Kết Thúc - Nav 1 ======-->
+
+
+
+         <!--====== Thanh Điều Hướng 2 ======-->
+<nav class="secondary-nav-wrapper">
+    <div class="container">
+
+        <!--====== Thanh Điều Hướng Phụ ======-->
+        <div class="secondary-nav">
+
+            <!--====== Kích Hoạt Plugin Thả Xuống ======-->
+            <div class="menu-init" id="navigation2">
+
+                <!-- Nút Kích Hoạt Toggle -->
+                <button class="btn btn--icon toggle-button fas fa-cog" type="button"></button>
+
+                <!--====== Menu ======-->
+                <div class="ah-lg-mode">
+
+                    <!-- Nút Đóng Menu -->
+                    <span class="ah-close">✕ Đóng</span>
+
+                    <!--====== Danh Sách ======-->
+                    <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+                        <li>
+
+                            <!-- Danh Mục Mèo -->
+                            <li class="has-dropdown">
+                                <a>SHOP CHO MÈO<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Thức ăn cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Dụng cụ ăn uống cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Cát vệ sinh cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-masonry.html">Khay, nhà vệ sinh cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Chuồng cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Thuốc tẩy giun sán cho mèo</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Chó -->
+                            <li class="has-dropdown">
+                                <a>SHOP CHO CHÓ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Thuốc cho chó</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Thuốc tẩy giun cho chó</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Quần Áo -->
+                            <li class="has-dropdown">
+                                <a>QUẦN ÁO CHÓ MÈO<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Áo</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Quần</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Giày, dép</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-masonry.html">Váy đầm</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Mắt kính</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Vật Nuôi Khác -->
+                            <li class="has-dropdown">
+                                <a>VẬT NUÔI KHÁC<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống ======-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Sóc bay Úc baby <div style="display:inline-block;background-color:red;padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">HOT</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Sóc bay Úc mặt trắng</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Sóc bay Úc Mosaic</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Dịch Vụ -->
+                            <li class="has-dropdown">
+                                <a>DỊCH VỤ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho thuê lồng vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Trông giữ chó, mèo, thú cưng</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Blog -->
+                            <li class="has-dropdown">
+                                <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:300px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho mèo mẹ ăn gì để nhiều sữa? <div style="display:inline-block;background-color:rgb(0, 132, 255);padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">NEW</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Phân biệt 7 nhóm chó</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Giống chó không rụng lông</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-masonry.html">Tên chó bằng tiếng Trung</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Lịch tẩy giun định kì cho mèo</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+                        </ul>
+                        <!--====== Kết thúc - Danh Sách ======-->
+                    </div>
+                    <!--====== Kết thúc - Menu ======-->
+                </div>
+                <!--====== Kết thúc - Plugin chính thả xuống ======-->
+
+
+
+
+                        <!--====== Tiện Ích Thả Xuống Chính ======-->
+<div class="menu-init" id="navigation3">
+
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
+
+    <!-- Số Lượng Sản Phẩm Tổng Cộng -->
+    <span class="total-item-round">2</span>
+
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li>
+
+                <!-- Trang Chủ -->
+                <a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li>
+
+                <!-- Danh Sách Yêu Thích -->
+                <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+            <li class="has-dropdown">
+
+                <!-- Giỏ Hàng Mini -->
+                <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
+
+                    <!-- Số Lượng Sản Phẩm Trong Giỏ -->
+                    <span class="total-item-round">2</span></a>
+
+                <!--====== Dropdown ======-->
+                <span class="js-menu-toggle"></span>
+                <div class="mini-cart">
+
+                    <!--====== Container Sản Phẩm Mini ======-->
+                    <div class="mini-product-container gl-scroll u-s-m-b-15">
+
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://bizweb.dktcdn.net/100/240/380/products/hinh-sp-08-b59ecad5-96dd-4b30-b559-dab96e400aad.jpg?v=1610966126447" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+
+                                        <a href="product-detail.html">Royal Canin Urinary S/O – Thức Ăn Hạt Cho Mèo Bị Sỏi Thận</a>
+                                    </span>
+
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">1 x</span>
+
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">131000đ</span>
+                                </div>
+                            </div>
+
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://www.maplepets.in/wp-content/uploads/2023/08/web3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+
+                                        <a href="product-detail.html">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</a>
+                                    </span>
+
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">2 x</span>
+
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">180000đ</span>
+                                </div>
+                            </div>
+
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+
+                    </div>
+                    <!--====== Kết Thúc - Container Sản Phẩm Mini ======-->
+
+                    <!--====== Thống Kê Sản Phẩm Mini ======-->
+                    <div class="mini-product-stat">
+                        <div class="mini-total">
+
+                            <!-- Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-text">TẠM TÍNH</span>
+
+                            <!-- Giá trị Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-value">442000đ</span>
+                        </div>
+
+                        <!-- Hành Động Mini -->
+                        <div class="mini-action">
+
+                            <!-- Liên kết Thanh Toán -->
+                            <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
+
+                            <!-- Liên kết Thông Tin Giỏ Hàng -->
+                            <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">THÔNG TIN GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                    <!--====== Kết Thúc - Thống Kê Sản Phẩm Mini ======-->
+                </div>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+</div>
+<!--====== Kết Thúc - Tiện Ích Thả Xuống Chính ======-->
+
+
+      <!--====== Nội Dung Ứng Dụng ======-->
+      <div class="app-content">
+
+        <!--====== Phần 1 ======-->
+        <div class="u-s-p-y-60">
+
+            <!--====== Nội Dung Phần 1 ======-->
+            <div class="section__content">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <div class="breadcrumb__wrap">
+                            <ul class="breadcrumb__list">
+                                <li class="has-separator">
+
+                                    <a href="index.html">Trang chủ</a></li>
+                                <li class="is-marked">
+
+                                    <a href="dash-my-order.html">Tài khoản của tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Kết Thúc - Phần 1 ======-->
+
+
+
+            <!--====== Phần 2 ======-->
+<div class="u-s-p-b-60">
+
+    <!--====== Nội Dung Phần ======-->
+    <div class="section__content">
+        <div class="dash">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+
+                        <!--====== Tính Năng Bảng Điều Khiển ======-->
+                        <div class="dash__box dash__box--bg-white dash__box--shadow u-s-m-b-30">
+                            <div class="dash__pad-1">
+
+                                <!-- Chào mừng người dùng -->
+                                <span class="dash__text u-s-m-b-16">Xin chào, Nguyễn Vũ</span>
+
+                                <!-- Danh sách chức năng Bảng Điều Khiển -->
+                                <ul class="dash__f-list">
+                                    <li>
+
+                                        <!-- Liên kết đến Quản lý tài khoản của tôi -->
+                                        <a class="dash-active" href="dashboard.html">Quản lý tài khoản của tôi</a>
+                                    </li>
+                                    <li>
+
+                                        <!-- Liên kết đến Hồ sơ của tôi -->
+                                        <a href="dash-my-profile.html">Hồ sơ của tôi</a>
+                                    </li>
+                                    <li>
+
+                                        <!-- Liên kết đến Đơn hàng của tôi -->
+                                        <a href="dash-manage-order.html">Đơn hàng của tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Hộp Thống Kê Đơn Hàng -->
+                        <div class="dash__box dash__box--bg-white dash__box--shadow dash__box--w">
+                            <div class="dash__pad-1">
+
+                                <!-- Danh sách thống kê -->
+                                <ul class="dash__w-list">
+                                    <li>
+                                        <div class="dash__w-wrap">
+
+                                            <!-- Biểu tượng Thống Kê Đơn Hàng -->
+                                            <span class="dash__w-icon dash__w-icon-style-1"><i class="fas fa-cart-arrow-down"></i></span>
+
+                                            <!-- Số lượng Đơn Hàng Đã Đặt -->
+                                            <span class="dash__w-text">4</span>
+
+                                            <!-- Liên kết đến Đơn hàng đã đặt -->
+                                            <a href="dash-my-order.html" class="dash__w-name">Đơn hàng đã đặt</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dash__w-wrap">
+
+                                            <!-- Biểu tượng Thống Kê Đơn Hủy -->
+                                            <span class="dash__w-icon dash__w-icon-style-2"><i class="fas fa-times"></i></span>
+
+                                            <!-- Số lượng Đơn Hàng Đã Hủy -->
+                                            <span class="dash__w-text">0</span>
+
+                                            <!-- Liên kết đến Đơn hàng đã hủy -->
+                                            <a href="dash-cancellation.html" class="dash__w-name">Đơn hàng đã hủy</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dash__w-wrap">
+
+                                            <!-- Biểu tượng Thống Kê Danh Sách Yêu Thích -->
+                                            <span class="dash__w-icon dash__w-icon-style-3"><i class="far fa-heart"></i></span>
+
+                                            <!-- Số lượng Sản Phẩm trong Danh Sách Yêu Thích -->
+                                            <span class="dash__w-text">3</span>
+
+                                            <!-- Liên kết đến Danh sách yêu thích -->
+                                            <a href="wishlist.html" class="dash__w-name">Danh sách yêu thích</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--====== Kết Thúc - Tính Năng Bảng Điều Khiển ======-->
+                                </div>
+                               <!--====== Cột Lớn 9 và Một Nửa Màn Hình 12 ======-->
+<div class="col-lg-9 col-md-12">
+    <!--====== Hộp Thông Tin Đơn Hàng ======-->
+    <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
+        <!--====== Khu Vực Padding 2 ======-->
+        <div class="dash__pad-2">
+            <!--====== Tiêu Đề H1 ======-->
+            <h1 class="dash__h1 u-s-m-b-14">Đơn hàng của tôi</h1>
+
+            <!--====== Mô Tả Văn Bản ======-->
+            <span class="dash__text u-s-m-b-30">Tại đây bạn có thể xem tất cả các sản phẩm đã được giao.</span>
+
+            <!--====== Biểu Mẫu Đơn Đặt Hàng ======-->
+            <form class="m-order u-s-m-b-30">
+                <!--====== Khu Vực Chọn Lọc Đơn Hàng ======-->
+                <div class="m-order__select-wrapper">
+                    <label class="u-s-m-r-8" for="my-order-sort">Hiện:</label>
+                    <select class="select-box select-box--primary-style" id="my-order-sort">
+                        <option selected>5 ngày trước</option>
+                        <option>15 ngày trước</option>
+                        <option>30 ngày trước</option>
+                        <option>6 tháng trước</option>
+                        <option>Trong năm 2023</option>
+                        <option>Tất cả đơn hàng</option>
+                    </select>
+                </div>
+            </form>
+
+            <!--====== Danh Sách Đơn Hàng ======-->
+            <div class="m-order__list">
+                <!--====== Đơn Hàng 1 ======-->
+                <div class="m-order__get">
+                    <!--====== Phần Header Quản Lý Đơn ======-->
+                    <div class="manage-o__header u-s-m-b-30">
+                        <div class="dash-l-r">
+                            <div>
+                                <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423126</div>
+                                <div class="manage-o__text u-c-silver">Đặt hàng vào ngày 12/12/2023 09:08:37</div>
+                            </div>
+                            <div>
+                                <!--====== Liên Kết Xem Đơn Hàng ======-->
+                                <div class="dash__link dash__link--brand">
+                                    <a href="dash-manage-order.html">XEM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--====== Phần Mô Tả Chi Tiết Đơn Hàng ======-->
+                    <div class="manage-o__description">
+                        <div class="description__container">
+                            <!--====== Phần Ảnh Mô Tả ======-->
+                            <div class="description__img-wrap">
+                                <img class="u-img-fluid" src="https://www.maplepets.in/wp-content/uploads/2023/08/web3.png" alt="">
+                            </div>
+                            <!--====== Tiêu Đề Mô Tả ======-->
+                            <div class="description-title">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</div>
+                        </div>
+                        <!--====== Phần Thông Tin Chi Tiết ======-->
+                        <div class="description__info-wrap">
+                            <div>
+                                <!--====== Huy Hiệu Đang Chuẩn Bị Hàng ======-->
+                                <span class="manage-o__badge badge--processing">Đang chuẩn bị hàng</span>
+                            </div>
+                            <div>
+                                <!--====== Số Lượng Sản Phẩm ======-->
+                                <span class="manage-o__text-2 u-c-silver">Số lượng:
+                                    <span class="manage-o__text-2 u-c-secondary">1</span>
+                                </span>
+                            </div>
+                            <div>
+                                <!--====== Tổng Cộng Giá Trị Đơn Hàng ======-->
+                                <span class="manage-o__text-2 u-c-silver">Tổng cộng:
+                                    <span class="manage-o__text-2 u-c-secondary">180000</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+                                                <!--====== Phần Hiển Thị Đơn Hàng Mới - Mỗi Phần Tương Ứng Một Đơn ======-->
+<div class="m-order__get">
+    <!--====== Phần Header Quản Lý Đơn ======-->
+    <div class="manage-o__header u-s-m-b-30">
+        <div class="dash-l-r">
+            <div>
+                <!--====== Đơn Hàng Số #305423125 ======-->
+                <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423125</div>
+                <!--====== Thời Gian Đặt Hàng ======-->
+                <div class="manage-o__text u-c-silver">Đặt hàng vào ngày 11/12/2023 09:08:37</div>
+            </div>
+            <div>
+                <!--====== Liên Kết Xem Chi Tiết Đơn Hàng ======-->
+                <div class="dash__link dash__link--brand">
+                    <a href="dash-manage-order.html">XEM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Phần Mô Tả Chi Tiết Đơn Hàng ======-->
+    <div class="manage-o__description">
+        <div class="description__container">
+            <!--====== Ảnh Mô Tả Sản Phẩm ======-->
+            <div class="description__img-wrap">
+                <img class="u-img-fluid" src="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763" alt="">
+            </div>
+            <!--====== Tiêu Đề Mô Tả Sản Phẩm ======-->
+            <div class="description-title">Petkit Pura X – Nhà Vệ Sinh Khử Mùi, Kháng Khuẩn Thông Minh Pura X</div>
+        </div>
+        <!--====== Thông Tin Chi Tiết Sản Phẩm ======-->
+        <div class="description__info-wrap">
+            <div>
+                <!--====== Huy Hiệu Đã Chuyển Hàng Đi ======-->
+                <span class="manage-o__badge badge--shipped">Đã chuyển hàng đi</span>
+            </div>
+            <div>
+                <!--====== Số Lượng Sản Phẩm ======-->
+                <span class="manage-o__text-2 u-c-silver">Số lượng:
+                    <span class="manage-o__text-2 u-c-secondary">1</span>
+                </span>
+            </div>
+            <div>
+                <!--====== Tổng Cộng Giá Trị Đơn Hàng ======-->
+                <span class="manage-o__text-2 u-c-silver">Tổng cộng:
+                    <span class="manage-o__text-2 u-c-secondary">300000đ</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="m-order__get">
+    <!--====== Phần Header Quản Lý Đơn ======-->
+    <div class="manage-o__header u-s-m-b-30">
+        <div class="dash-l-r">
+            <div>
+                <!--====== Đơn Hàng Số #305423124 ======-->
+                <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423124</div>
+                <!--====== Thời Gian Đặt Hàng ======-->
+                <div class="manage-o__text u-c-silver">Đặt hàng vào ngày 10/12/2023 09:08:37</div>
+            </div>
+            <div>
+                <!--====== Liên Kết Xem Chi Tiết Đơn Hàng ======-->
+                <div class="dash__link dash__link--brand">
+                    <a href="dash-manage-order.html">XEM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Phần Mô Tả Chi Tiết Đơn Hàng ======-->
+    <div class="manage-o__description">
+        <div class="description__container">
+            <!--====== Ảnh Mô Tả Sản Phẩm ======-->
+            <div class="description__img-wrap">
+                <img class="u-img-fluid" src="https://go.yolo.vn/wp-content/uploads/2020/10/D7_TCho_Bo_Cr-625x703.png" alt="">
+            </div>
+            <!--====== Tiêu Đề Mô Tả Sản Phẩm ======-->
+            <div class="description-title">Pate Tươi Bò Giữ Dáng Pet Choy Dành Cho Chó</div>
+        </div>
+        <!--====== Thông Tin Chi Tiết Sản Phẩm ======-->
+        <div class="description__info-wrap">
+            <div>
+                <!--====== Huy Hiệu Đã Giao Hàng ======-->
+                <span class="manage-o__badge badge--delivered">Đã giao hàng</span>
+            </div>
+            <div>
+                <!--====== Số Lượng Sản Phẩm ======-->
+                <span class="manage-o__text-2 u-c-silver">Số lượng:
+                    <span class="manage-o__text-2 u-c-secondary">1</span>
+                </span>
+            </div>
+            <div>
+                <!--====== Tổng Cộng Giá Trị Đơn Hàng ======-->
+                <span class="manage-o__text-2 u-c-silver">Tổng cộng:
+                    <span class="manage-o__text-2 u-c-secondary">95000đ</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-order__get">
+    <!--====== Phần Header Quản Lý Đơn ======-->
+    <div class="manage-o__header u-s-m-b-30">
+        <div class="dash-l-r">
+            <div>
+                <!--====== Đơn Hàng Số #305423123 ======-->
+                <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423123</div>
+                <!--====== Thời Gian Đặt Hàng ======-->
+                <div class="manage-o__text u-c-silver">Đặt hàng vào ngày 09/12/2023 09:08:37</div>
+            </div>
+            <div>
+                <!--====== Liên Kết Xem Chi Tiết Đơn Hàng ======-->
+                <div class="dash__link dash__link--brand">
+                    <a href="dash-manage-order.html">XEM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Phần Mô Tả Chi Tiết Đơn Hàng ======-->
+    <div class="manage-o__description">
+        <div class="description__container">
+            <!--====== Ảnh Mô Tả Sản Phẩm ======-->
+            <div class="description__img-wrap">
+                <img class="u-img-fluid" src="https://bizweb.dktcdn.net/100/240/380/products/hinh-sp-08-b59ecad5-96dd-4b30-b559-dab96e400aad.jpg?v=1610966126447" alt="">
+            </div>
+            <!--====== Tiêu Đề Mô Tả Sản Phẩm ======-->
+            <div class="description-title">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</div>
+        </div>
+        <!--====== Thông Tin Chi Tiết Sản Phẩm ======-->
+        <div class="description__info-wrap">
+            <div>
+                <!--====== Huy Hiệu Đã Giao Hàng ======-->
+                <span class="manage-o__badge badge--delivered">Đã giao hàng</span>
+            </div>
+            <div>
+                <!--====== Số Lượng Sản Phẩm ======-->
+                <span class="manage-o__text-2 u-c-silver">Số lượng:
+                    <span class="manage-o__text-2 u-c-secondary">1</span>
+                </span>
+            </div>
+            <div>
+                <!--====== Tổng Cộng Giá Trị Đơn Hàng ======-->
+                <span class="manage-o__text-2 u-c-silver">Tổng cộng:
+                    <span class="manage-o__text-2 u-c-secondary">180000đ</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!--====== Kết thúc - Mục Nội dung ======-->
+</div>
+<!--====== Kết thúc - Phần 2 ======-->
+</div>
+<!--====== Kết thúc - Nội dung ứng dụng ======-->
+
+
+     <!--====== Footer ======-->
+     <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="outer-footer__content u-s-m-b-40">
+
+                            <span class="outer-footer__content-title">Liên hệ</span>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+
+                                <span>555 Đ. 3 tháng 2, P8, Quận 10, Thành phố Hồ Chí Minh</span></div>
+                            <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+
+                                <span> 1900 3979</span></div>
+                            <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+
+                                <span>pettown@gmail.com</span></div>
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+
+                                        <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li>
+
+                                        <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li>
+
+                                        <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li>
+
+                                        <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li>
+
+                                        <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="outer-footer__content u-s-m-b-40">
+
+                                    <span class="outer-footer__content-title">Thông tin</span>
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+
+                                                <a href="cart.html">Đơn hàng</a></li>
+                                            <li>
+
+                                                <a href="dashboard.html">Tài khoản</a></li>
+                                            <li>
+
+                                    
+
+                                                <a href="dash-payment-option.html">Thông tin thanh toán</a></li>
+                                            <li>
+
+                                                <a href="shop-side-version-2.html">Phụ kiện thú cưng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="outer-footer__content u-s-m-b-40">
+                                    <div class="outer-footer__list-wrap">
+
+                                        <span class="outer-footer__content-title">Pet Town</span>
+                                        <ul>
+                                            <li>
+
+                                                <a href="about.html">Giới thiệu</a></li>
+                                            <li>
+
+                                                <a href="contact.html">Liên hệ</a></li>
+                                            <li>
+
+                                                <a href="index.html"></a></li>
+                                            <li>
+
+                                                <a href="dash-my-order.html">Giao hàng</a></li>
+                                    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+
+                            <span class="outer-footer__content-title">Đăng ký để nhận ưu đãi 20% khi spa thú cưng </span>
+                            <form class="newsletter">
+                                <div class="u-s-m-b-15">
+                                    <div class="radio-box newsletter__radio">
+
+                                        <input type="radio" id="male" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+
+                                            <label class="radio-box__label" for="male">Chó</label></div>
+                                    </div>
+                                    <div class="radio-box newsletter__radio">
+
+                                        <input type="radio" id="female" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+
+                                            <label class="radio-box__label" for="female">Mèo</label></div>
+                                    </div>
+                                </div>
+                                <div class="newsletter__group">
+
+                                    <label for="newsletter"></label>
+
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập email của bạn">
+
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button></div>
+
+                                <span class="newsletter__text"> Ngoài ra, bạn cũng sẽ nhận được các tin tức về những sản phẩm, dịch vụ mới.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logos-container" style="display: flex; justify-content: space-between; align-items: center;"><a href="index.html">
+                    <!-- Logo PetTown -->
+                    <img src="PetTown.png" alt="Pet Town Logo" style="max-width: 150px; height: auto; border-radius: 20%;"></a>
+                    <!-- Chứng nhận bộ công thương -->
+                    <img src="BoCongThuong.png" alt="Logo BCT" style="max-width: 350px; height: auto;">
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="lower-footer__content">
+                            
+                            <div class="lower-footer__copyright">
+                        
+                                <span>Copyright © 2023</span>
+
+                                <a href="index.html">Pet Town</a>
+
+                                <span>All Right Reserved</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===== Kết thúc Chân trang =====-->
+
+      <!--====== Phần Hiển Thị Modal ======-->
+
+
+       
+        <!--====== Kết Thúc - Phần Hiển Thị Modal ======-->
+    </div>
+    <!--====== Kết Thúc - Ứng Dụng Chính ======-->
+
+
+    <!--====== Google Analytics: thay UA-XXXXX-Y bằng ID trang web của bạn ======-->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+
+    <!--====== Plugin jQuery Shopnav ======-->
+    <script src="js/jquery.shopnav.js"></script>
+
+    <!--====== Ứng Dụng ======-->
+    <script src="js/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript đã bị tắt trong trình duyệt của bạn.</h1>
+
+                            <span class="app-setting__text">Vui lòng bật JavaScript trong trình duyệt của bạn hoặc nâng cấp lên một trình duyệt hỗ trợ JavaScript.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link href="images/favicon.png" rel="shortcut icon" />
+        <title>Ludus - Electronics, Apparel, Computers, Books, DVDs & more</title>
+
+        <!--====== Google Font ======-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" />
+
+        <!--====== Vendor Css ======-->
+        <link rel="stylesheet" href="css/vendor.css" />
+
+        <!--====== Utility-Spacing ======-->
+        <link rel="stylesheet" href="css/utility.css" />
+
+        <!--====== App ======-->
+    <link rel="stylesheet" href="css/app.css">
+
+    <style>
+        /* Thiết kế ô bình luận */
+        #commentForm {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    
+        .form-group {
+            margin-bottom: 15px;
+        }
+    
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        /* Thiết kế danh sách bình luận */
+        #commentList {
+            margin-top: 20px;
+        }
+    
+        #commentList div {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    
+        #commentList strong {
+            color: #333;
+        }
+
+
+
+        .star {
+    cursor: pointer;
+}
+
+.star:hover,
+.star.highlighted {
+    color: gold; /* Màu khi hover hoặc được chọn */
+}
+
+.rating {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+}
+
+.star {
+    font-size: 24px; /* Điều chỉnh kích thước sao */
+    cursor: pointer;
+    margin: 0 5px; /* Tạo khoảng cách giữa các sao */
+}
+
+
+    </style>
+    
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt=""></div>
+    </div>
+
+      <!--====== Phần Chính của Ứng Dụng ======-->
+      <div id="app">
+
+
+        <!--====== Tiêu Đề Chính của Ứng Dụng ======-->
+        <header class="header--style-1 header--box-shadow">
+
+
+            <!--====== Thanh Điều Hướng 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+
+
+                    <!--====== Thanh Điều Hướng Chính ======-->
+                    <div class="primary-nav">
+
+
+                        <!--====== Logo Chính ======-->
+
+
+                        <a class="main-logo" href="index.html">
+
+
+                            <img src="images/logo/logo-1.png" alt=""></a>
+                        <!--====== Kết Thúc - Logo Chính ======-->
+
+
+
+
+                       <!--====== Biểu mẫu Tìm Kiếm ======-->
+<form class="main-form">
+
+
+    <label for="main-search"></label>
+
+
+    <!-- Input Tìm Kiếm -->
+    <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
+
+
+    <!-- Nút Tìm Kiếm -->
+    <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+</form>
+<!--====== Kết Thúc - Biểu mẫu Tìm Kiếm ======-->
+
+
+
+
+<!--====== Tiện Ích Dropdown Chính ======-->
+<div class="menu-init" id="navigation">
+
+
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+
+
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+
+
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+
+
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài Khoản">
+
+
+                <!-- Icon Tài Khoản -->
+                <a><i class="far fa-user-circle"></i></a>
+
+
+                <!--====== Dropdown ======-->
+
+
+                <span class="js-menu-toggle"></span>
+                <ul style="width:120px">
+
+
+                    <!-- Mục Đăng Nhập -->
+                    <li>
+
+                        <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
+
+                            <span>Đăng ký</span></a></li>
+                    <li>
+
+                        <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
+
+                            <span>Đăng nhập</span></a></li>
+                        </a>
+                    </li>
+                </ul>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+</div>
+<!--====== Kết Thúc - Tiện Ích Dropdown Chính ======-->
+</div>
+<!--====== Kết Thúc - Thanh Điều Hướng Chính ======-->
+</div>
+</nav>
+<!--====== Kết Thúc - Nav 1 ======-->
+
+
+
+
+
+
+         <!--====== Thanh Điều Hướng 2 ======-->
+<nav class="secondary-nav-wrapper">
+    <div class="container">
+
+
+        <!--====== Thanh Điều Hướng Phụ ======-->
+        <div class="secondary-nav">
+
+
+            <!--====== Kích Hoạt Plugin Thả Xuống ======-->
+            <div class="menu-init" id="navigation2">
+
+
+                <!-- Nút Kích Hoạt Toggle -->
+                <button class="btn btn--icon toggle-button fas fa-cog" type="button"></button>
+
+
+                <!--====== Menu ======-->
+                <div class="ah-lg-mode">
+
+
+                    <!-- Nút Đóng Menu -->
+                    <span class="ah-close">✕ Đóng</span>
+
+
+                    <!--====== Danh Sách ======-->
+                    <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+                        <li>
+
+
+                            <!-- Danh Mục cửa hàng -->
+                            <li class="has-dropdown">
+                                <a href="shop-side-version-2.html">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-side-version-2.html">Shop cho chó</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+                            <!-- Danh Mục Vật Nuôi Khác -->
+                            <li class="has-dropdown">
+                                <a>VẬT NUÔI KHÁC<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống ======-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Sóc bay Úc baby <div style="display:inline-block;background-color:red;padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">HOT</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Sóc bay Úc mặt trắng</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Sóc bay Úc Mosaic</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+
+                            <!-- Danh Mục Dịch Vụ -->
+                            <li class="has-dropdown">
+                                <a>DỊCH VỤ<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:200px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho thuê lồng vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Trông giữ chó, mèo, thú cưng</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+
+
+                            <!-- Danh Mục Blog -->
+                            <li class="has-dropdown">
+                                <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+
+                                <!--====== Thả xuống =====   =-->
+                                <span class="js-menu-toggle"></span>
+                                <ul style="width:300px">
+                                    <li>
+                                        <a href="blog-left-sidebar.html">Cho mèo mẹ ăn gì để nhiều sữa? <div style="display:inline-block;background-color:rgb(0, 132, 255);padding:3px;border-radius:4px;"><span style="color:white;font-size:10px;font-weight:bold;">NEW</span></div></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-right-sidebar.html">Phân biệt 7 nhóm chó</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-none.html">Giống chó không rụng lông</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-masonry.html">Tên chó bằng tiếng Trung</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Lịch tẩy giun định kì cho mèo</a>
+                                    </li>
+                                </ul>
+                                <!--====== Kết thúc - Thả xuống ======-->
+                            </li>
+                        </ul>
+                        <!--====== Kết thúc - Danh Sách ======-->
+                    </div>
+                    <!--====== Kết thúc - Menu ======-->
+                </div>
+                <!--====== Kết thúc - Plugin chính thả xuống ======-->
+    
+    
+    
+    
+    
+    
+    
+    
+                        <!--====== Tiện Ích Thả Xuống Chính ======-->
+    <div class="menu-init" id="navigation3">
+    
+    
+    <!-- Nút Kích Hoạt Toggle -->
+    <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
+    
+    
+    <!-- Số Lượng Sản Phẩm Tổng Cộng -->
+    <span class="total-item-round">2</span>
+    
+    
+    <!--====== Menu ======-->
+    <div class="ah-lg-mode">
+    
+    
+        <!-- Nút Đóng Menu -->
+        <span class="ah-close">✕ Đóng</span>
+    
+    
+        <!--====== Danh Sách ======-->
+        <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+            <li>
+    
+    
+                <!-- Trang Chủ -->
+                <a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li>
+    
+    
+                <!-- Danh Sách Yêu Thích -->
+                <a href="wishlist.html"><i class="far fa-heart"></i></a></li>
+            <li class="has-dropdown">
+    
+    
+                <!-- Giỏ Hàng Mini -->
+                <a class="mini-cart-shop-link"><i class="fas fa-shopping-bag"></i>
+    
+    
+                    <!-- Số Lượng Sản Phẩm Trong Giỏ -->
+                    <span class="total-item-round">2</span></a>
+    
+    
+                <!--====== Dropdown ======-->
+                <span class="js-menu-toggle"></span>
+                <div class="mini-cart">
+    
+    
+                    <!--====== Container Sản Phẩm Mini ======-->
+                    <div class="mini-product-container gl-scroll u-s-m-b-15">
+    
+    
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+    
+    
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+    
+    
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://bizweb.dktcdn.net/100/240/380/products/hinh-sp-08-b59ecad5-96dd-4b30-b559-dab96e400aad.jpg?v=1610966126447" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+    
+    
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+    
+    
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+    
+    
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+    
+    
+                                        <a href="product-detail.html">Royal Canin Urinary S/O – Thức Ăn Hạt Cho Mèo Bị Sỏi Thận</a>
+                                    </span>
+    
+    
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">1 x</span>
+    
+    
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">131000đ</span>
+                                </div>
+                            </div>
+    
+    
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+    
+    
+                        <!--====== Thẻ cho giỏ hàng mini ======-->
+                        <div class="card-mini-product">
+                            <div class="mini-product">
+                                <div class="mini-product__image-wrapper">
+    
+    
+                                    <!-- Liên kết đến chi tiết sản phẩm -->
+                                    <a class="mini-product__link" href="product-detail.html">
+    
+    
+                                        <!-- Hình ảnh sản phẩm mini -->
+                                        <img class="u-img-fluid" src="https://www.maplepets.in/wp-content/uploads/2023/08/web3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mini-product__info-wrapper">
+    
+    
+                                    <!-- Danh mục sản phẩm mini -->
+                                    <span class="mini-product__category">
+    
+    
+                                        <a href="shop-side-version-2.html">Shop cho mèo</a>
+                                    </span>
+    
+    
+                                    <!-- Tên sản phẩm mini -->
+                                    <span class="mini-product__name">
+    
+    
+                                        <a href="product-detail.html">Nutrience Subzero Fraser Valley – Thức Ăn Hạt Đặc Biệt Cho Mèo Từ Canada</a>
+                                    </span>
+    
+    
+                                    <!-- Số lượng sản phẩm mini -->
+                                    <span class="mini-product__quantity">2 x</span>
+    
+    
+                                    <!-- Giá sản phẩm mini -->
+                                    <span class="mini-product__price">180000đ</span>
+                                </div>
+                            </div>
+    
+    
+                            <!-- Nút Xóa Sản Phẩm Mini -->
+                            <a class="mini-product__delete-link far fa-trash-alt"></a>
+                        </div>
+                        <!--====== Kết Thúc - Thẻ cho giỏ hàng mini ======-->
+    
+    
+                    </div>
+                    <!--====== Kết Thúc - Container Sản Phẩm Mini ======-->
+    
+    
+                    <!--====== Thống Kê Sản Phẩm Mini ======-->
+                    <div class="mini-product-stat">
+                        <div class="mini-total">
+    
+    
+                            <!-- Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-text">TẠM TÍNH</span>
+    
+    
+                            <!-- Giá trị Tổng Tiền Tạm Tính -->
+                            <span class="subtotal-value">442000đ</span>
+                        </div>
+    
+    
+                        <!-- Hành Động Mini -->
+                        <div class="mini-action">
+    
+    
+                            <!-- Liên kết Thanh Toán -->
+                            <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
+    
+    
+                            <!-- Liên kết Thông Tin Giỏ Hàng -->
+                            <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">THÔNG TIN GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                    <!--====== Kết Thúc - Thống Kê Sản Phẩm Mini ======-->
+                </div>
+                <!--====== Kết Thúc - Dropdown ======-->
+            </li>
+        </ul>
+        <!--====== Kết Thúc - Danh Sách ======-->
+    </div>
+    <!--====== Kết Thúc - Menu ======-->
+    </header>
+    <!--====== Kết Thúc - Tiện Ích Thả Xuống Chính ======-->
+            <!--====== Nội dung ứng dụng ======-->
+<div class="app-content">
+    <!--====== Phần 1 ======-->
+    <div class="u-s-p-t-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <!--====== Đường dẫn sản phẩm ======-->
+                    
+                    <!--====== Kết thúc - Đường dẫn sản phẩm ======-->
+
+
+                                <!--====== Product Detail Zoom ======-->
+                                <div class="pd u-s-m-b-30">
+                                    <div class="slider-fouc pd-wrap">
+                                        <div id="pd-o-initiate">
+                                            <!-- Ảnh sản phẩm 1 -->
+                                            <div class="pd-o-img-wrap" data-src="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763">
+                                                <img class="u-img-fluid" src="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763" data-zoom-image="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763" alt="" />
+                                            </div>
+                                            <!-- Ảnh sản phẩm 2 -->
+                                            <div class="pd-o-img-wrap" data-src="https://i.ebayimg.com/images/g/pukAAOSwEVVhFkMT/s-l1200.jpg">
+                                                <img class="u-img-fluid" src="https://i.ebayimg.com/images/g/pukAAOSwEVVhFkMT/s-l1200.jpg" data-zoom-image="https://i.ebayimg.com/images/g/pukAAOSwEVVhFkMT/s-l1200.jpg" alt="" style="width: 85%; height: auto" />
+                                            </div>
+                                            <!-- Ảnh sản phẩm 3 -->
+                                            <div class="pd-o-img-wrap" data-src="https://salt.tikicdn.com/cache/w400/ts/product/ea/e9/20/a6ffc899933d8cef957d611fa23421d1.jpg">
+                                                <img class="u-img-fluid" src="https://salt.tikicdn.com/cache/w400/ts/product/ea/e9/20/a6ffc899933d8cef957d611fa23421d1.jpg" data-zoom-image="https://salt.tikicdn.com/cache/w400/ts/product/ea/e9/20/a6ffc899933d8cef957d611fa23421d1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        
+
+                                         
+                                    </div>
+                                    <div class="u-s-m-t-15">
+                                        <!-- Thanh trượt ảnh sản phẩm -->
+                                        <div class="slider-fouc">
+                                            <div id="pd-o-thumbnail">
+                                                <!-- Ảnh nhỏ 1 -->
+                                                <div>
+                                                    <img class="u-img-fluid" src="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763" alt="" />
+                                                </div>
+                                                <!-- Ảnh nhỏ 2 -->
+                                                <div>
+                                                    <img class="u-img-fluid" src="https://i.ebayimg.com/images/g/pukAAOSwEVVhFkMT/s-l1200.jpg" alt="" />
+                                                </div>
+                                                <!-- Ảnh nhỏ 3 -->
+                                                <div>
+                                                    <img class="u-img-fluid" src="https://salt.tikicdn.com/cache/w400/ts/product/ea/e9/20/a6ffc899933d8cef957d611fa23421d1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="u-s-m-b-15">
+                                        <br />
+                                        <br />
+                                        <!-- Mô tả sản phẩm -->
+                                        <span class="pd-detail__preview-desc">
+                                            Nhà vệ sinh cho mèo tự động Petkit Pura X – kháng khuẩn, khử mùi</br>
+                                    
+                                            Sản phẩm đạt giải thưởng Reddot Award Design</br>
+                                    
+                                            Kích thước sản phẩm: dài 50,4 cm x rộng 53,2 cm X cao 64,6 cm</br>
+                                    
+                                            Chất liệu: nhựa ABS cao cấp</br>
+                                    
+                                            Lưới lọc dùng được nhiều loại cát: đất sét, đậu phụ, hỗn hợp</br>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                <!--====== Kết thúc - Tông tin sản phẩm Zoom ======-->
+                            </div>
+                            <div class="col-lg-7">
+                                <!--====== Chi tiết sản phẩm bên phải ======-->
+                                <div class="pd-detail">
+                                    <div>
+                                        <!-- Tên sản phẩm -->
+                                        <span class="pd-detail__name" id="productName"></span>
+                                    </div>
+                                    <div>
+                                        <div class="pd-detail__inline">
+                                            <!-- Giá sản phẩm -->
+                                            <span class="pd-detail__price">300.000 đ<sup><u>đ</u></sup></span>
+                            
+                                            <!-- Giảm giá -->
+                                            <span class="pd-detail__discount">(40% OFF)</span>
+                            
+                                            <!-- Giá gốc -->
+                                            <del class="pd-detail__del">500.000<sup><u>đ</u></sup></del>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__rating gl-rating-style">
+                                            <!-- Đánh giá sao -->
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            
+                                            <!-- Số lượt đánh giá -->
+                                            <span class="pd-detail__review u-s-m-l-4"> <a data-click-scroll="#view-review">23 Đánh giá</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+                                            <!-- Số lượng tồn kho -->
+                                            <span class="pd-detail__stock">19 sẵn hàng</span>
+                            
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+                                            <!-- Thêm vào danh sách yêu thích -->
+                                            <span class="pd-detail__click-wrap"><i class="far fa-heart u-s-m-r-6"></i><a href="signin.html">Thêm vào danh sách yêu thích</a><span class="pd-detail__click-count">(222)</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+                                            <!-- Gửi thông báo khi sản phẩm hạ giá -->
+                                            <span class="pd-detail__click-wrap"><i class="far fa-envelope u-s-m-r-6"></i><a href="signin.html">Gửi cho tôi thông tin khi sản phẩm hạ giá</a><span class="pd-detail__click-count">(20)</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <!-- Danh sách các nút chia sẻ xã hội -->
+                                        <ul class="pd-social-list">
+                                            <li><a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li><a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <!-- Form thêm vào giỏ hàng -->
+                                        <form class="pd-detail__form">
+                                            <div class="pd-detail-inline-2">
+                                                <div class="u-s-m-b-15">
+                                                    <!-- Input Counter để chọn số lượng sản phẩm -->
+                                                    <div class="input-counter">
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000" />
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                    </div>
+                                                    <!-- Kết thúc - Input Counter -->
+                                                </div>
+                                                <div class="u-s-m-b-15">
+                                                    <!-- Nút thêm vào giỏ hàng -->
+                                                    <button class="btn btn--e-brand-b-2" type="submit" style='color:#333'id="addtocart">Thêm vào giỏ hàng</button>
+                                                    <button class="btn btn--e-brand-b-2.1" type="submit" style='background-color:black'>Mua ngay</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                    <div class="u-s-m-b-15">
+                                        <span class="pd-detail__label u-s-m-b-8">Chính sách về sản phẩm</span>
+                                        <!-- Danh sách chính sách sản phẩm -->
+                                        <ul class="pd-detail__policy-list">
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+                                                <span>Bảo vệ người tiêu dùng.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+                                                <span>Hoàn tiền 100% nếu không nhận được hàng.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+                                                <span>Hoàn trả được chấp nhận nếu không giống mô tả.</span>
+                                            </li>
+                                        </ul>
+
+                                        <!--Sản phẩm bán kèm-->
+                                        <div class="u-s-m-b-15">
+                                            <span class="pd-detail__label u-s-m-b-8"> </span>
+
+                                            <span class="pd-detail__label u-s-m-b-8">Sản phẩm bán kèm</span>
+                                        </div>
+
+                                        <!--Các sản phẩm bán kèm-->
+
+                                        <div class="section__content-sell_side">
+                                            <!-- Phần chứa slider sản phẩm -->
+                                            <div class="container">
+                                                <div class="slider-fouc">
+                                                    <!-- Carousel cho slider sản phẩm -->
+                                                    <div class="owl-carousel product-slider" data-item="2">
+                                                        <!-- Sản phẩm 1 -->
+                                                        <div class="u-s-m-b-30">
+                                                            <div class="product-o product-o--hover-on">
+                                                                <div class="product-o__wrap">
+                                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                                        <img class="aspect__img" src="https://bizweb.dktcdn.net/thumb/grande/100/276/018/products/c46aee-e560fcfbfbdf449cb8a3b1678e28c8fd-mv2.jpg?v=1622728451763" alt=""/>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- Danh mục sản phẩm -->
+                                                                <span class="product-o__category"> <a href="shop-side-version-2.html">Khay vệ sinh cho mèo</a></span>
+                                                                <!-- Tên sản phẩm -->
+                                                                <span class="product-o__name"> <a href="product-detail.html">Petkit Pura X – Nhà Vệ Sinh Khử Mùi, Kháng Khuẩn Thông Minh Pura X</a></span>
+                                                                <!-- Đánh giá sản phẩm -->
+                                                                <div class="product-o__rating gl-rating-style">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                    <span class="product-o__review">(20)</span>
+                                                                </div>
+                                                                <!-- Giá sản phẩm -->
+                                                                <span class="product-o__price">300.000<sup><u>đ</u></sup>
+                                                                    <!-- Giảm giá -->
+                                                                    <span class="product-o__discount">420.000<sup><u>đ</u></sup></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Sản phẩm 2 -->
+                                                        <div class="u-s-m-b-30">
+                                                            <div class="product-o product-o--hover-on">
+                                                                <div class="product-o__wrap">
+                                                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                                                        <img class="aspect__img" src="https://go.yolo.vn/wp-content/uploads/2020/10/D7_TCho_Bo_Cr-625x703.png" alt=""/>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- Danh mục sản phẩm -->
+                                                                <span class="product-o__category"> <a href="shop-side-version-2.html">Thức ăn cho Chó</a></span>
+                                                                <!-- Tên sản phẩm -->
+                                                                <span class="product-o__name"> <a href="product-detail.html">Pate Tươi Bò Giữ Dáng Pet Choy Dành Cho Chó</a></span>
+                                                                <!-- Đánh giá sản phẩm -->
+                                                                <div class="product-o__rating gl-rating-style">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                    <span class="product-o__review">(20)</span>
+                                                                </div>
+                                                                <!-- Giá sản phẩm -->
+                                                                <span class="product-o__price">95.000<sup><u>đ</u></sup>
+                                                                    <!-- Giảm giá -->
+                                                                    <span class="product-o__discount">100.000<sup><u>đ</u></sup></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Kết thúc - Carousel cho slider sản phẩm -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             <!--Kết thúc sản phẩm bán kèm-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====== Product Detail Tab ======-->
+                <div class="u-s-p-y-90">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="pd-tab">
+                                    <div class="u-s-m-b-30">
+                                        <!-- Điều hướng qua các tab cho chi tiết sản phẩm -->
+<ul class="nav pd-tab__list">
+    <!-- Tab cho mô tả sản phẩm -->
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#pd-desc">Mô tả</a>
+    </li>
+    
+    <!-- Tab cho bình luận sản phẩm -->
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#pd-comt">Bình luận</a>
+    </li>
+    
+    <!-- Tab cho đánh giá sản phẩm -->
+    <li class="nav-item">
+        <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">
+            Đánh giá
+            <span>(23)</span>
+        </a>
+    </li>
+</ul>
+
+                                    </div>
+                                    <div class="tab-content">
+                                        <!--====== Tab 1 ======-->
+                                        <div class="tab-pane fade show active" id="pd-desc">
+                                            <div class="pd-tab__desc">
+                                                <div class="u-s-m-b-15">
+                                                    <p>
+                                                      <b>7 quyền lợi khi mua nhà vệ sinh tự động cho mèo Petkit Pura X tại Pettown:</b> </br>
+                                                        Sản phẩm chính hãng</br>
+                                                        100 phiên bản quốc tế</br>
+                                                        Bảo hành 12 tháng trên toàn quốc</br>
+                                                        Hỗ trợ sử dụng trọn đời</br>
+                                                        Giao hàng miễn phí tại TpHCM, Hà Nội</br>
+                                                        Tặng ngay 1 túi cát vệ sinh 10L</br>
+                                                        Được hưởng quyền lợi Pettown Membership, giảm 3% cho thức ăn, 10% cho phụ kiện trọn đời!</br>
+                                                    </p>
+                                                </div>
+                                                <!-- Phần miêu tả sản phẩm -->
+<div class="u-s-m-b-30">
+    <!-- Nhúng video từ YouTube -->
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/AZlZixDPUMM?si=CR0o4cbSbHizkKuq"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+    ></iframe>
+</div>
+<!-- Kết thúc phần miêu tả sản phẩm -->
+
+                                                <div class="u-s-m-b-30">
+                                                    <!-- Danh sách chính sách sản phẩm -->
+<ul>
+    <li>
+        <i class="fas fa-check u-s-m-r-8"></i>
+        <span>Bảo vệ người tiêu dùng.</span>
+    </li>
+    <li>
+        <i class="fas fa-check u-s-m-r-8"></i>
+        <span>Hoàn tiền 100% nếu không nhận được hàng.</span>
+    </li>
+    <li>
+        <i class="fas fa-check u-s-m-r-8"></i>
+        <span>Hoàn trả được chấp nhận nếu không giống mô tả</span>
+    </li>
+</ul>
+<!-- Kết thúc danh sách chính sách sản phẩm -->
+
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <!--====== Kết thúc tab 1 ======-->
+
+                                        <!--==== Tab 2=========-->
+                                        <div class="tab-pane fade show active" id="pd-comt">
+                                            <div class="pd-tab__comt">
+                                                <div class="u-s-m-b-15">
+                                                    <h4>Hãy để lại bình luận của bạn tại đây</h4>
+                                                <form id="commentForm">
+                                                    <!-- Tên người bình luận -->
+                                                    <div class="form-group">
+                                                        <label for="commentName">ID của bạn:</label>
+                                                        <input type="text" class="form-control" id="commentName" required>
+                                                    </div>
+                                                    <!-- Nội dung bình luận -->
+                                                    <div class="form-group">
+                                                        <label for="commentContent">Nội dung bình luận:</label>
+                                                        <textarea class="form-control" id="commentContent" rows="4" required></textarea>
+                                                    </div>
+                                                    <!-- Đánh giá theo số sao -->
+                                                    <div id="ratingContainer">
+                                                        <div class="rating">
+                                                            <span class="star" onmouseover="highlightStars(1)" onmouseout="resetStars()" onclick="rateProduct(1)"></span>
+                                                            <span class="star" onmouseover="highlightStars(2)" onmouseout="resetStars()" onclick="rateProduct(2)"></span>
+                                                            <span class="star" onmouseover="highlightStars(3)" onmouseout="resetStars()" onclick="rateProduct(3)"></span>
+                                                            <span class="star" onmouseover="highlightStars(4)" onmouseout="resetStars()" onclick="rateProduct(4)"></span>
+                                                            <span class="star" onmouseover="highlightStars(5)" onmouseout="resetStars()" onclick="rateProduct(5)"></span>
+                                                        </div>
+                                                        <div id="selectedRating">Đánh giá: 0 sao</div>
+                                                    </div>
+                                                    <!-- Nút gửi bình luận & đánh giá -->
+                                                    <button type="button" class="btn btn-primary" onclick="submitComment()">Gửi bình luận</button>
+                                                </form>
+
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>  <!--====== Kết thúc tab 2 ======-->
+
+                                        <!--==== Tab 3=========-->
+                                        <div class="tab-pane fade show active" id="pd-rev">
+                                            <div class="pd-tab__rev">
+                                                <div class="u-s-m-b-30">
+                                                     <!-- Hiển thị ô đánh giá -->
+                                                     <div class="pd-tab__rev-score">
+                                                        <div class="u-s-m-b-8">
+                                                            <h2>23 Đánh giá - 4.6 (Tổng)</h2>
+                                                        </div>
+                                                        <div class="gl-rating-style-2 u-s-m-b-8">
+                                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                                        </div>
+                                                        <div class="u-s-m-b-8">
+                                                            <h4>Hãy cho chúng tôi biết suy nghĩ của bạn về sản phẩm này bằng cách để lại ý kiến trong phần bình luận</h4>
+                                                        </div>
+                                                    
+                                                        <span class="gl-text">Hãy cho chúng tôi biết ý kiến của bạn về sản phẩm này</span>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+            
+
+                                                </div>
+                                                <div class="u-s-m-b-30">
+                                                    <form class="pd-tab__rev-f1">
+                                                        <div class="rev-f1__group">
+                                                            <div class="u-s-m-b-15">
+                                                                <h2 id="productTitle">23 Đánh giá cho <span id="productNameTitle"></span></h2>
+                                                            </div>
+                                                            <div class="u-s-m-b-15">
+                                                                <label for="sort-review"></label>
+                                                                <select class="select-box select-box--primary-style" id="sort-review">
+                                                                    <option selected>Sắp xếp theo: Đánh giá tốt nhất</option>
+                                                                    <option>Sắp xếp theo: Đánh giá thấp nhất</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rev-f1__review">
+                                                            <div class="review-o u-s-m-b-15">
+                                                                <div class="review-o__info u-s-m-b-8">
+                                                                    <span class="review-o__name">Khang Bảo</span>
+                                                                    <span class="review-o__date">25 Tháng 11 2023 19:11:30</span>
+                                                                </div>
+                                                                <div class="review-o__rating gl-rating-style u-s-m-b-8">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                                    <span>(4)</span>
+                                                                </div>
+                                                                <p class="review-o__text">Sản phẩm rất đáng mua, mèo nhà mình ăn nhiều nhưng không bị bón, bé rất yêu thích món này</p>
+                                                            </div>
+
+                                                            
+                                                            <!-- Các đánh giá khác nên thêm vào đây -->
+                                                        </div>
+                                                        <!-- Xem thêm đánh giá khác -->
+                                                        <button class="btn btn--e-brand-b-2.2" type="submit" style="color:#333;background-color: #f8cc3b;">Xem thêm</button>
+                                                    </form>
+                                                </div>
+                                                
+                                            </div>
+
+                                            
+                                        </div>  <!--====== Kết thúc tab 3 ======-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc các tab mô tả, đánh giá, review ======-->
+                <!-- Phần giới thiệu sản phẩm -->
+<div class="section__intro u-s-m-b-46">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section__text-wrap">
+                    <h1 class="section__heading u-c-secondary u-s-m-b-12">Khách hàng khác cùng xem</h1>
+                    <span class="section__span u-c-grey">Sản phẩm khách hàng đã xem</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Kết thúc phần giới thiệu sản phẩm -->
+
+
+<div class="section__content">
+    <div class="container">
+        <div class="slider-fouc">
+            <div class="owl-carousel product-slider" data-item="4">
+                <div class="u-s-m-b-30">
+                    <div class="product-o product-o--hover-on">
+                        <div class="product-o__wrap">
+                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                <img class="aspect__img" src="https://go.yolo.vn/wp-content/uploads/2020/10/thuc-an-hat-royal-canin-urinary-so-cho-meo-bi-than-625x625.jpg" alt=""
+                            /></a>
+                            <div class="product-o__action-wrap">
+                                <ul class="product-o__action-list">
+                                      
+                                    <li>
+                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào danh sách yêu thích"><i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Gửi cho tôi thông tin khi sản phẩm hạ giá"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <span class="product-o__category"> <a href="shop-side-version-2.html">Electronics</a></span>
+
+                        <span class="product-o__name"> <a href="product-detail.html">Royal Canin Urinary S/O – Thức Ăn Hạt Cho Mèo Bị Sỏi Thận</a></span>
+                        <div class="product-o__rating gl-rating-style">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                            <span class="product-o__review">(20)</span>
+                        </div>
+
+                        <span class="product-o__price"
+                            >131.000<sup><u>đ</u></sup>
+
+                            <span class="product-o__discount"
+                                >150.000<sup><u>đ</u></sup></span
+                            ></span
+                        >
+                    </div>
+                </div>
+                <!-- Một sản phẩm trong danh sách sản phẩm -->
+<div class="u-s-m-b-30">
+    <div class="product-o product-o--hover-on">
+        <div class="product-o__wrap">
+            <!-- Hình ảnh sản phẩm -->
+            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                <img class="aspect__img" src="https://lzd-img-global.slatic.net/g/p/fc508e02d1b6c173213ee55187215d68.jpg_720x720q80.jpg" alt="" />
+            </a>
+
+            <!-- Các tùy chọn hành động -->
+            <div class="product-o__action-wrap">
+                <ul class="product-o__action-list">
+                    <!-- Thêm vào danh sách yêu thích -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào danh sách yêu thích"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <!-- Gửi thông báo khi sản phẩm giảm giá -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Gửi cho tôi thông tin khi sản phẩm hạ giá"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Danh mục của sản phẩm -->
+        <span class="product-o__category"> <a href="shop-side-version-2.html">Electronics</a></span>
+
+        <!-- Tên sản phẩm -->
+        <span class="product-o__name"> <a href="product-detail.html">Pate Cho Mèo King Pet Lon 380gr - Pate Cho Mèo Mọi Lứa Tuổi King's Pet</a></span>
+
+        <!-- Đánh giá và số lượng đánh giá -->
+        <div class="product-o__rating gl-rating-style">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="product-o__review">(20)</span>
+        </div>
+
+        <!-- Giá gốc và giảm giá (nếu có) -->
+        <span class="product-o__price">45.000<sup><u>đ</u></sup>
+            <span class="product-o__discount">65.000<sup><u>đ</u></sup></span>
+        </span>
+    </div>
+</div>
+
+                <!-- Một sản phẩm khác trong danh sách sản phẩm -->
+<div class="u-s-m-b-30">
+    <div class="product-o product-o--hover-on">
+        <div class="product-o__wrap">
+            <!-- Hình ảnh sản phẩm -->
+            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                <img class="aspect__img" src="https://letrungpet.com/upload/product/drontal-cho-meo-2-8940.png" alt="" />
+            </a>
+
+            <!-- Các tùy chọn hành động -->
+            <div class="product-o__action-wrap">
+                <ul class="product-o__action-list">
+                    <!-- Thêm vào danh sách yêu thích -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào danh sách yêu thích"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <!-- Gửi thông báo khi sản phẩm giảm giá -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Gửi cho tôi thông tin khi sản phẩm hạ giá"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Danh mục của sản phẩm -->
+        <span class="product-o__category"> <a href="shop-side-version-2.html">Thuốc cho mèo</a></span>
+
+        <!-- Tên sản phẩm -->
+        <span class="product-o__name"> <a href="product-detail.html">[1 viên] Tẩy giun Drontal plus dạng viên cho chó mèo</a></span>
+
+        <!-- Đánh giá và số lượng đánh giá -->
+        <div class="product-o__rating gl-rating-style">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="product-o__review">(20)</span>
+        </div>
+
+        <!-- Giá gốc và giảm giá (nếu có) -->
+        <span class="product-o__price">45.000<sup><u>đ</u></sup>
+            <span class="product-o__discount">100.000<sup><u>đ</u></sup></span>
+        </span>
+    </div>
+</div>
+
+                <!-- Sản phẩm khác trong danh sách sản phẩm -->
+<div class="u-s-m-b-30">
+    <div class="product-o product-o--hover-on">
+        <div class="product-o__wrap">
+            <!-- Hình ảnh sản phẩm -->
+            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                <img class="aspect__img" src="https://go.yolo.vn/wp-content/uploads/2021/01/yolo-nhap-khau-chinh-hang-cong-ty.jpg" alt="" />
+            </a>
+
+            <!-- Các tùy chọn hành động -->
+            <div class="product-o__action-wrap">
+                <ul class="product-o__action-list">
+                    <!-- Thêm vào danh sách yêu thích -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào danh sách yêu thích"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <!-- Gửi thông báo khi sản phẩm giảm giá -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Gửi cho tôi thông tin khi sản phẩm hạ giá"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Danh mục của sản phẩm -->
+        <span class="product-o__category"> <a href="shop-side-version-2.html">thuốc cho mèo</a></span>
+
+        <!-- Tên sản phẩm -->
+        <span class="product-o__name"> <a href="product-detail.html">Broadline For Cats 2.5kg – Thuốc Nhỏ Gáy Trị Nội Ngoại Ký Sinh Trùng Cho Mèo Nhỏ</a></span>
+
+        <!-- Đánh giá và số lượng đánh giá -->
+        <div class="product-o__rating gl-rating-style">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="product-o__review">(20)</span>
+        </div>
+
+        <!-- Giá gốc và giảm giá (nếu có) -->
+        <span class="product-o__price">260.000<sup><u>đ</u></sup>
+            <span class="product-o__discount">330.000<sup><u>đ</u></sup></span>
+        </span>
+    </div>
+</div>
+
+                
+                <!-- Sản phẩm vệ sinh cho mèo -->
+<div class="u-s-m-b-30">
+    <div class="product-o product-o--hover-on">
+        <div class="product-o__wrap">
+            <!-- Hình ảnh sản phẩm -->
+            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                <img class="aspect__img" src="https://lzd-img-global.slatic.net/g/p/c5fecc2fd2833495644e5b609c3a15f8.jpg_720x720q80.jpg" alt="" />
+            </a>
+
+            <!-- Các tùy chọn hành động -->
+            <div class="product-o__action-wrap">
+                <ul class="product-o__action-list">
+                    <!-- Thêm vào danh sách yêu thích -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào danh sách yêu thích"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <!-- Gửi thông báo khi sản phẩm giảm giá -->
+                    <li>
+                        <a href="signin.html" data-tooltip="tooltip" data-placement="top" title="Gửi cho tôi thông tin khi sản phẩm hạ giá"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Danh mục của sản phẩm -->
+        <span class="product-o__category"> <a href="shop-side-version-2.html">Vệ sinh cho mèo</a></span>
+
+        <!-- Tên sản phẩm -->
+        <span class="product-o__name"> <a href="product-detail.html">PETTO SAN - CÁT THÁI LAN VỆ SINH CHO MÈO TÚI 5L</a></span>
+
+        <!-- Đánh giá và số lượng đánh giá -->
+        <div class="product-o__rating gl-rating-style">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span class="product-o__review">(20)</span>
+        </div>
+
+        <!-- Giá gốc và giảm giá (nếu có) -->
+        <span class="product-o__price">65.000<sup><u>đ</u></sup>
+            <span class="product-o__discount">110.000<sup><u>đ</u></sup></span>
+        </span>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== End - Section Content ======-->
+</div>
+<!--====== End - Section 1 ======-->
+</div>
+<!--====== End - App Content ======-->
+</div>
+
+             <!-- Chân trang -->
+
+        <footer>
+            <div class="outer-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="outer-footer__content u-s-m-b-40">
+    
+                                <span class="outer-footer__content-title">Liên hệ</span>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
+                                 <!--Địa chỉ-->
+                                    <span>555 Đ. 3 tháng 2, P8, Quận 10, Thành phố Hồ Chí Minh</span></div>
+                                <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
+                                 <!--Hotline-->
+                                    <span> 1900 3979</span></div>
+                                <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
+                                 <!--Mail liên lạc-->
+                                    <span>pettown@gmail.com</span></div>
+                                    <!--Các icon mạng xã hội-->
+                                <div class="outer-footer__social">
+                                    <ul>
+                                        <li>
+                                 <!--Logo facebook kèm hiệu ứng hover-->
+                                            <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li>
+                                 <!--Logo twitter kèm hiệu ứng hover-->
+                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li>
+                                 <!--Logo youtube kèm hiệu ứng hover-->
+                                            <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li>
+                                  <!--Logo instagram kèm hiệu ứng hover-->
+                                            <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li>
+                                 <!--Logo google kèm hiệu ứng hover-->
+                                            <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- Phần outer footer-->
+                                    <div class="outer-footer__content u-s-m-b-40">
+                                        <span class="outer-footer__content-title">Thông tin</span>
+                                        <div class="outer-footer__list-wrap">
+                                            <!-- Các thông tin-->
+                                            <ul>
+                                                <li>
+    
+                                                    <a href="cart.html">Đơn hàng</a></li>
+                                                <li>
+    
+                                                    <a href="dashboard.html">Tài khoản</a></li>
+                                                <li>
+    
+                                        
+    
+                                                    <a href="dash-payment-option.html">Thông tin thanh toán</a></li>
+                                                <li>
+    
+                                                    <a href="shop-side-version-2.html">Phụ kiện thú cưng</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="outer-footer__content u-s-m-b-40">
+                                        <div class="outer-footer__list-wrap">
+    
+                                            <span class="outer-footer__content-title">Pet Town</span>
+                                            <ul>
+                                                <li>
+    
+                                                    <a href="about.html">Giới thiệu</a></li>
+                                                <li>
+    
+                                                    <a href="contact.html">Liên hệ</a></li>
+                                                <li>
+    
+                                                    <a href="index.html"></a></li>
+                                                <li>
+    
+                                                    <a href="dash-my-order.html">Giao hàng</a></li>
+                                        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="outer-footer__content">
+                                 <!--Phần kêu gọi khách hàng đăng ký mail nhận ưu đãi-->
+                                <span class="outer-footer__content-title">Đăng ký để nhận ưu đãi 20% khi spa thú cưng </span>
+                                <form class="newsletter">
+                                    <div class="u-s-m-b-15">
+                                        <div class="radio-box newsletter__radio">
+                                 <!-- Phần chọn loại thú cưng-->
+                                            <input type="radio" id="male" name="gender">
+                                            <div class="radio-box__state radio-box__state--primary">
+    
+                                                <label class="radio-box__label" for="male">Chó</label></div>
+                                        </div>
+                                        <div class="radio-box newsletter__radio">
+    
+                                            <input type="radio" id="female" name="gender">
+                                            <div class="radio-box__state radio-box__state--primary">
+    
+                                                <label class="radio-box__label" for="female">Mèo</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="newsletter__group">
+    
+                                        <label for="newsletter"></label>
+    
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập email của bạn">
+    
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button></div>
+    
+                                    <span class="newsletter__text"> Ngoài ra, bạn cũng sẽ nhận được các tin tức về những sản phẩm, dịch vụ mới.</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-logos-container" style="display: flex; justify-content: space-between; align-items: center;"><a href="index.html">
+                        <!-- Logo PetTown -->
+                        <img src="PetTown.png" alt="Pet Town Logo" style="max-width: 150px; height: auto; border-radius: 20%;"></a>
+                        <!-- Chứng nhận bộ công thương -->
+                        <img src="BoCongThuong.png" alt="Logo BCT" style="max-width: 350px; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--PHần lower footer-->
+                            <div class="lower-footer__content">
+                                <!--Phần bản quyền-->
+                                <div class="lower-footer__copyright">
+                            
+                                    <span>Copyright © 2023</span>
+    
+                                    <a href="index.html">Pet Town</a>
+    
+                                    <span>All Right Reserved</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Kết thúc footer-->
+            
+        </div>
+        <!--====== Kết thúc ứng dụng chính ======-->
+
+        <!-- Bắt đầu theo dõi Google Analytics -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("send", "pageview");
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!-- Kết thúc theo dõi Google Analytics -->
+
+<!-- Tải file script từ nhà cung cấp -->
+<script src="js/vendor.js"></script>
+
+<!-- Tải jQuery Shopnav plugin -->
+<script src="js/jquery.shopnav.js"></script>
+
+<!-- Tải ứng dụng -->
+<script src="js/app.js"></script>
+
+<script>
+    // Hàm submitComment để xử lý khi người dùng gửi bình luận
+    function submitComment() {
+        // Lấy thông tin từ form
+        var name = document.getElementById("commentName").value;
+        var content = document.getElementById("commentContent").value;
+
+        // Kiểm tra nếu tên và nội dung không trống
+        if (name && content) {
+            // Tạo một đối tượng bình luận mới
+            var comment = {
+                name: name,
+                content: content
+            };
+
+            // Hiển thị bình luận ngay lập tức
+            displayComment(comment);
+
+            // (Tùy thuộc vào ứng dụng của bạn, bạn có thể gửi dữ liệu lên máy chủ ở đây để lưu trữ)
+        }
+    }
+
+    // Hàm displayComment để hiển thị bình luận trong danh sách
+    function displayComment(comment) {
+        // Hiển thị bình luận trong danh sách
+        var commentList = document.getElementById("commentList");
+        var commentItem = document.createElement("div");
+        commentItem.innerHTML = "<strong>" + comment.name + ":</strong> " + comment.content;
+        commentList.appendChild(commentItem);
+
+        // Xóa nội dung form sau khi bình luận được thêm
+        document.getElementById("commentName").value = "";
+        document.getElementById("commentContent").value = "";
+    }
+
+    // Hàm highlightStars để đánh giá số sao
+    function highlightStars(count) {
+        let stars = document.querySelectorAll('.star');
+        stars.forEach((star, index) => {
+            star.classList.toggle('highlighted', index < count);
+        });
+    }
+
+
+ // Hàm resetStars để đặt lại trạng thái sao không được đánh giá
+ function resetStars() {
+        let stars = document.querySelectorAll('.star');
+        stars.forEach(star => star.classList.remove('highlighted'));
+    }
+
+    // Hàm rateProduct để xử lý khi người dùng đánh giá sản phẩm
+    function rateProduct(rating) {
+        // Thực hiện xử lý khi người dùng đánh giá sản phẩm
+        document.getElementById('selectedRating').innerText = `Đánh giá: ${rating} sao`;
+    }
+        // Ẩn tất cả các tab bình luận và đánh giá khi trang được tải
+document.getElementById('pd-comt').style.display = 'none';
+document.getElementById('pd-rev').style.display = 'none';
+
+// Hàm chuyển đến tab và hiển thị nội dung tương ứng
+function switchToTab(tabId) {
+    // Ẩn tất cả các tab
+    document.getElementById('pd-desc').style.display = 'none';
+    document.getElementById('pd-comt').style.display = 'none';
+    document.getElementById('pd-rev').style.display = 'none';
+
+    // Hiển thị tab được chọn
+    document.getElementById(tabId).style.display = 'block';
+}
+
+// Bắt sự kiện chuyển đến tab mô tả
+document.querySelector('[data-toggle="tab"][href="#pd-desc"]').addEventListener('click', function() {
+    switchToTab('pd-desc');
+});
+
+// Bắt sự kiện chuyển đến tab bình luận
+document.querySelector('[data-toggle="tab"][href="#pd-comt"]').addEventListener('click', function() {
+    switchToTab('pd-comt');
+});
+
+// Bắt sự kiện chuyển đến tab đánh giá
+document.querySelector('[data-toggle="tab"][href="#pd-rev"]').addEventListener('click', function() {
+    switchToTab('pd-rev');
+});
+
+
+// Tạo biến chứa tên sản phẩm
+var ProductName = "Petkit Pura X – Nhà Vệ Sinh Khử Mùi, Kháng Khuẩn Thông Minh Pura X";
+
+// Lấy phần tử span theo id
+var productNameElement = document.getElementById('productName');
+var productNameTitleElement = document.getElementById('productNameTitle');
+
+// Kiểm tra xem phần tử có tồn tại không
+if (productNameElement && productNameTitleElement) {
+    // Gán nội dung mới cho cả hai phần tử
+    productNameElement.innerText = ProductName;
+    productNameTitleElement.innerText = ProductName;
+} else {
+    console.log('Không tìm thấy phần tử span');
+}
+
+// Lấy tham chiếu đến button
+const addtocart = document.getElementById('addtocart');
+
+// Thêm sự kiện click cho button
+addtocart.addEventListener('click', function() {
+    // Hiển thị thông báo
+    alert('Đã thêm vào giỏ hàng thành công');
+});
+</script>
+
+<!--====== Noscript ======-->
+<noscript>
+    <div class="app-setting">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="app-setting__wrap">
+                        <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+                        <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+</body>
+</html>
